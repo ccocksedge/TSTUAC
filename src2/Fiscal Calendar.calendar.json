@@ -1,0 +1,118 @@
+{
+    "businessDays": {
+        "value": "Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday"
+    },
+    "comments": "Retail 4-5-4 Calendar",
+    "customDays": [
+        {
+            "name": "Period 06",
+            "sysId": "0043e11c01b04b23a59b3109ae285eb6"
+        },
+        {
+            "name": "Week 2",
+            "sysId": "02dd7fe0f4f14bbd9db0c803fc081ba7"
+        },
+        {
+            "name": "Week 3",
+            "sysId": "0e907dad59844865902606f331ad9d07"
+        },
+        {
+            "name": "Period 10",
+            "sysId": "1a8237f042d645c98a7ba83946665e4e"
+        },
+        {
+            "name": "Period 11",
+            "sysId": "2154e60ab7fe49628a8b64988b081110"
+        },
+        {
+            "name": "Period 01",
+            "sysId": "28650e3786de4ceb977f118c1f0f81b2"
+        },
+        {
+            "name": "demo.christmas",
+            "sysId": "42d69a0ee3c84990b28531dccf38ac56"
+        },
+        {
+            "name": "Week 1",
+            "sysId": "4d57e7da9a6a420586aced0a403419c3"
+        },
+        {
+            "name": "Period 02",
+            "sysId": "53cf8ac9b386443a96c4d956469c5770"
+        },
+        {
+            "name": "Fiscal Period",
+            "sysId": "616c4545fbb6472c8e8ef5470cedb222"
+        },
+        {
+            "name": "Period 08",
+            "sysId": "66f7f9c224fa4142be13dd13147ee718"
+        },
+        {
+            "name": "Last Week",
+            "sysId": "7534423873194d258ba4a8589ce88513"
+        },
+        {
+            "name": "Christmas",
+            "sysId": "8602ac16493547c7b7f2b9d97b691709"
+        },
+        {
+            "name": "Period 09",
+            "sysId": "8edcef0da3f2457cb6bd74f40de298d2"
+        },
+        {
+            "name": "Period 04",
+            "sysId": "af00f3c5c02142eebf142888cde7b1af"
+        },
+        {
+            "name": "Week 4",
+            "sysId": "c5ad268736e54cb2ace7047dc14c5ab3"
+        },
+        {
+            "name": "Period 05",
+            "sysId": "cb431f0d31d549a78a78fe3a7025e042"
+        },
+        {
+            "name": "Period 03",
+            "sysId": "d45f9253d4db4ddf916df8a21a27f99f"
+        },
+        {
+            "name": "Holidays",
+            "sysId": "e9de0c133a374862841b4f9628b516e1"
+        },
+        {
+            "name": "Period 12",
+            "sysId": "f43e24973df942be97edfeed50e8c1da"
+        },
+        {
+            "name": "Period 07",
+            "sysId": "f70d5f04a4ed485a8ac937057290bd9a"
+        }
+    ],
+    "exportReleaseLevel": "7.3.0.0",
+    "exportTable": "ops_calendar",
+    "firstDayOfWeek": "Sunday",
+    "firstQuarterStart": {
+        "day": "1",
+        "month": "Jan"
+    },
+    "fourthQuarterStart": {
+        "day": "1",
+        "month": "Oct"
+    },
+    "localCustomDays": [],
+    "name": "Fiscal Calendar",
+    "opswiseGroups": [
+        "Retail"
+    ],
+    "secondQuarterStart": {
+        "day": "1",
+        "month": "Apr"
+    },
+    "sysId": "1c876c04f32c456c8859abf44c2851c8",
+    "thirdQuarterStart": {
+        "day": "1",
+        "month": "Jul"
+    },
+    "version": 1
+}
