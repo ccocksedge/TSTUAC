@@ -1,0 +1,16 @@
+{
+    "credentials": "db_user",
+    "dbDescription": null,
+    "dbDriver": "com.microsoft.sqlserver.jdbc.SQLServerDriver",
+    "dbMaxRows": 100,
+    "dbType": "MS SQL Server",
+    "dbUrl": "jdbc:sqlserver://host.docker.internal:1443;DatabaseName=uc",
+    "exportReleaseLevel": "7.3.0.0",
+    "exportTable": "ops_database_connection",
+    "name": "dev-db",
+    "opswiseGroups": [
+        "Automation_Ops"
+    ],
+    "sysId": "d0f403c1af6f4f41b45031b0ac3a0028",
+    "version": 2
+}
