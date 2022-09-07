@@ -1,0 +1,33 @@
+{
+    "agentLimitAmount": 10,
+    "agentLimitType": "Unlimited",
+    "agents": [],
+    "currentCount": 0,
+    "description": null,
+    "distribution": "Any",
+    "ignoreInactiveAgents": false,
+    "ignoreSuspendedAgents": false,
+    "lastAgentUsed": null,
+    "lastResolution": null,
+    "limitAmount": 5,
+    "limitType": "Unlimited",
+    "name": "test_cluster",
+    "networkAlias": null,
+    "networkAliasPort": null,
+    "notifications": {
+        "emailNotifications": [],
+        "snmpNotifications": []
+    },
+    "opswiseGroups": [
+        "Retail"
+    ],
+    "resolutionDescription": null,
+    "resolutionStatus": "None",
+    "resumedOn": null,
+    "strictBsrvcMembership": false,
+    "suspended": false,
+    "suspendedOn": null,
+    "sysId": "7300079d835549cfba426be1d685dec4",
+    "type": "Linux/Unix",
+    "version": 1
+}
