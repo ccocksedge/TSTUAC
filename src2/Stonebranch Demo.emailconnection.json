@@ -1,0 +1,23 @@
+{
+    "authentication": true,
+    "defaultUser": "stonebranch.demo@stonebranch.com",
+    "description": null,
+    "emailAddr": "stonebranch.demo@stonebranch.com",
+    "exportReleaseLevel": "7.3.0.0",
+    "exportTable": "ops_email_connection",
+    "imap": null,
+    "imapPort": 143,
+    "imapSsl": false,
+    "imapStarttls": false,
+    "name": "Stonebranch Demo",
+    "opswiseGroups": [],
+    "smtp": "smtp.office365.com",
+    "smtpPort": 587,
+    "smtpSsl": false,
+    "smtpStarttls": true,
+    "sysId": "d30fcb99e44d420a876f14a51f30be2b",
+    "systemConnection": false,
+    "trashFolder": null,
+    "type": "Outgoing",
+    "version": 1
+}
