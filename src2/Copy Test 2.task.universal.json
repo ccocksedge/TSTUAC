@@ -12,8 +12,8 @@
     "agentClusterVar": null,
     "agentVar": null,
     "autoCleanup": false,
-    "avgRunTime": 10,
-    "avgRunTimeDisplay": "10 Seconds",
+    "avgRunTime": 11,
+    "avgRunTimeDisplay": "11 Seconds",
     "booleanField1": {
         "label": "spacer1",
         "name": "spacer1",
@@ -44,7 +44,7 @@
     "choiceField3": {
         "label": "Exclude List",
         "name": "excludelist",
-        "value": "agentcluster,calendar,credential,customday,databaseconnection,emailconnection,emailtemplate,peoplesoftconnection,sapconnection,script,snmpmanager,trigger,variable,virtualresource,universaltemplate"
+        "value": "agentcluster,calendar,credential,customday,databaseconnection,emailconnection,emailtemplate,peoplesoftconnection,sapconnection,script,snmpmanager"
     },
     "choiceField4": {
         "label": "GitHub Repository",
@@ -113,9 +113,9 @@
         "name": "list",
         "value": "[\"name1\"]"
     },
-    "lastRun": "2022-09-07 13:48:57 -0400",
-    "lastRunTime": 21,
-    "lastRunTimeDisplay": "21 Seconds",
+    "lastRun": "2022-09-07 13:54:06 -0400",
+    "lastRunTime": 22,
+    "lastRunTimeDisplay": "22 Seconds",
     "lfDayConstraint": "None",
     "lfDuration": "00:00:00:00",
     "lfEnabled": false,
@@ -166,8 +166,8 @@
     "retryInterval": 60,
     "retryMaximum": 0,
     "retrySuppressFailure": false,
-    "runCount": 23,
-    "runTime": 234,
+    "runCount": 24,
+    "runTime": 256,
     "runtimeDir": null,
     "startHeld": false,
     "startHeldReason": null,
@@ -201,7 +201,7 @@
     "twWorkflowOnly": "-- System Default --",
     "userEstimatedDuration": null,
     "variables": [],
-    "version": 7,
+    "version": 8,
     "virtualResources": [],
     "waitForOutput": false
 }
