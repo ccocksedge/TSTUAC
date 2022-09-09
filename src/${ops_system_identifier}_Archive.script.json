@@ -1,0 +1,13 @@
+{
+    "content": "docker cp tst-uac:${export_path} C:\\Docker\\${ops_system_identifier}_Archive\nrmdir /Q /S C:\\Docker\\${ops_system_identifier}_Archive\\Archive\n\n\nrename c:\\Docker\\${ops_system_identifier}_Archive\\${_varSubstring('export_path', ${__add('${___varLastIndexOf('export_path', '/')}', '1')})} Archive",
+    "description": null,
+    "exportReleaseLevel": "7.3.0.0",
+    "exportTable": "ops_script",
+    "notes": [],
+    "opswiseGroups": [],
+    "resolveVariables": true,
+    "scriptName": "${ops_system_identifier}_Archive",
+    "scriptType": "Script",
+    "sysId": "903ecc81ebf54be4bc99d084bcb5b9be",
+    "version": 6
+}
