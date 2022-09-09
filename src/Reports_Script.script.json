@@ -1,0 +1,15 @@
+{
+    "content": "@ping 127.0.0.1 -n 20 -w 1000> nul",
+    "description": null,
+    "exportReleaseLevel": "7.3.0.0",
+    "exportTable": "ops_script",
+    "notes": [],
+    "opswiseGroups": [
+        "Data_Ops"
+    ],
+    "resolveVariables": false,
+    "scriptName": "Reports_Script",
+    "scriptType": "Script",
+    "sysId": "ca3861eebe244d2db7dadd5e0382994c",
+    "version": 3
+}
