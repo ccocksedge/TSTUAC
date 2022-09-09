@@ -47,6 +47,12 @@
                 "name": "environment",
                 "operator": "EQUALS",
                 "value": "tstuac"
+            },
+            {
+                "type": "criterion",
+                "name": "payload",
+                "operator": "DOES_NOT_CONTAIN",
+                "value": "Push from UAC"
             }
         ],
         "logicalOperator": "And"
@@ -116,6 +122,6 @@
     "twWorkflowOnly": "-- System Default --",
     "userEstimatedDuration": null,
     "variables": [],
-    "version": 36,
+    "version": 37,
     "virtualResources": []
 }
