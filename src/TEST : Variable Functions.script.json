@@ -1,6 +1,6 @@
 {
     "content": "echo ${_varJsonPath('github_push','$.head_commit.created')}\necho ${_varJsonPathAsArray('github_push', '$.head_commit.created', '', true)}\necho ${_varJsonPath('github_push', '$.head_commit.created', '','',true)}",
-    "description": null,
+    "description": "Test Variable Functions",
     "exportReleaseLevel": "7.3.0.0",
     "exportTable": "ops_script",
     "notes": [],
