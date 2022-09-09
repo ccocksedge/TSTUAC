@@ -91,7 +91,7 @@
     "outputReturnType": "NONE",
     "outputType": "STDOUT",
     "parameters": null,
-    "resPriority": 20,
+    "resPriority": 10,
     "resolveNameImmediately": false,
     "restrictionPeriod": "None",
     "restrictionPeriodAfterDate": null,
