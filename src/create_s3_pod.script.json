@@ -1,6 +1,6 @@
 {
     "content": "apiVersion: v1\nkind: Pod\nmetadata:  \n  name: s3-demo-postgres\nspec:  \n  containers:      \n  - name: application\n    image: postgres:latest\n    env:\n    - name: POSTGRES_DB\n      value: 's3demo'\n    - name: POSTGRES_PASSWORD\n      value: 's3demo'\n    - name: POSTGRES_USER\n      value: 's3demo'\n    - name: POSTGRES_HOST_AUTH_METHOD\n      value: 'md5'\n    ports:\n    - containerPort: 3306\n  - name: s3-demo-sidecar        \n    image: stonebranch/universal-agent:7.3.0.0\n    env:\n    - name: UAGNETNAME\n      value: 's3-demo-sidecar'\n    - name: UAGOMSSERVERS\n      value: '7999@host.docker.internal'\n    - name: UAGTRANSIENT\n      value: 'yes'\n    - name: UAGAGENTCLUSTERS\n      value: 's3_processing'\n    - name: UAGBUSINESSSERVICES\n      value: 'Data_Ops'\n    ports:\n    - containerPort: 7887",
-    "description": null,
+    "description": "S3 Filemonitor Demo",
     "exportReleaseLevel": "7.3.0.0",
     "exportTable": "ops_script",
     "notes": [],
