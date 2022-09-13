@@ -10,7 +10,7 @@
     "agent": null,
     "agentCluster": null,
     "agentClusterVar": null,
-    "agentVar": "${${env}_linux_agent}",
+    "agentVar": "${${ops_system_identifier}_linux_agent}",
     "autoCleanup": false,
     "broadcastCluster": null,
     "broadcastClusterVar": null,

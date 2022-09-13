@@ -44,7 +44,7 @@
     "choiceField3": {
         "label": "Exclude List",
         "name": "excludelist",
-        "value": "agentcluster,businessservice,calendar,credential,customday,databaseconnection,emailconnection,emailtemplate,peoplesoftconnection,sapconnection,snmpmanager,trigger,variable,virtual,universaltemplate,universaleventtemplate"
+        "value": "agentcluster,businessservice,calendar,credential,databaseconnection,emailconnection,emailtemplate,peoplesoftconnection,sapconnection,snmpmanager,trigger,variable,virtual,universaltemplate,universaleventtemplate"
     },
     "choiceField4": {
         "label": "GitHub Repository",
