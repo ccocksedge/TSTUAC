@@ -1,5 +1,5 @@
 {
-    "type": "taskWindows",
+    "type": "taskWorkflow",
     "actions": {
         "abortActions": [],
         "emailNotifications": [],
@@ -7,21 +7,10 @@
         "snmpNotifications": [],
         "systemOperations": []
     },
-    "agent": null,
-    "agentCluster": null,
-    "agentClusterVar": null,
-    "agentVar": "${${ops_system_identifier}_windows_agent}",
-    "avgRunTime": 2,
-    "avgRunTimeDisplay": "2 Seconds",
-    "broadcastCluster": null,
-    "broadcastClusterVar": null,
-    "command": null,
-    "commandOrScript": "Script",
+    "calculateCp": false,
+    "calendar": null,
     "cpDuration": null,
     "cpDurationUnit": "Minutes",
-    "createConsole": false,
-    "credentials": null,
-    "credentialsVar": null,
     "customField1": {
         "label": "Owner",
         "value": null
@@ -30,7 +19,6 @@
         "label": null,
         "value": null
     },
-    "desktopInteract": false,
     "efDayConstraint": "None",
     "efDuration": "00:00:00:00",
     "efEnabled": false,
@@ -41,22 +29,15 @@
     "efOffsetType": "Percentage",
     "efTime": "00:00",
     "efType": "Time",
-    "elevateUser": false,
-    "environment": [],
     "exclusiveTasks": [],
     "exclusiveWithSelf": false,
     "executionRestriction": "None",
-    "exitCodeOutput": null,
-    "exitCodeProcessing": "Success Exitcode Range",
-    "exitCodeText": null,
-    "exitCodes": "0",
     "exportReleaseLevel": "7.3.0.0",
-    "exportTable": "ops_task_windows",
-    "firstRun": "2022-09-02 10:00:04 -0400",
+    "exportTable": "ops_task_workflow",
+    "firstRun": "",
     "holdResources": false,
-    "lastRun": "2022-09-09 10:00:10 -0400",
-    "lastRunTime": 2,
-    "lastRunTimeDisplay": "2 Seconds",
+    "lastRun": "",
+    "layoutOption": "-- None --",
     "lfDayConstraint": "None",
     "lfDuration": "00:00:00:00",
     "lfEnabled": false,
@@ -74,23 +55,13 @@
     "lsNthAmount": 5,
     "lsTime": "00:00",
     "lsType": "Time",
-    "maxRunTime": 2,
-    "maxRunTimeDisplay": "2 Seconds",
-    "minRunTime": 2,
-    "minRunTimeDisplay": "2 Seconds",
-    "name": "${ops_system_identifier}_Archive",
+    "name": "QAO_sql_output_to_file",
     "notes": [],
+    "numberOfTasks": 2,
     "opswiseGroups": [
-        "Automation_Ops"
+        "QA_Ops"
     ],
-    "outputFailureOnly": false,
-    "outputReturnFile": null,
-    "outputReturnNline": "100",
-    "outputReturnSline": "1",
-    "outputReturnText": null,
-    "outputReturnType": "NONE",
-    "outputType": "STDOUT",
-    "parameters": null,
+    "overrideCalendar": false,
     "resPriority": 10,
     "resolveNameImmediately": false,
     "restrictionPeriod": "None",
@@ -100,19 +71,16 @@
     "restrictionPeriodBeforeTime": null,
     "restrictionPeriodDateList": [],
     "retainSysIds": true,
-    "retryExitCodes": null,
-    "retryIndefinitely": false,
-    "retryInterval": 60,
-    "retryMaximum": 0,
-    "retrySuppressFailure": false,
-    "runCount": 2,
-    "runTime": 4,
-    "runtimeDir": null,
-    "script": "${ops_system_identifier}_Archive",
+    "runCount": 0,
+    "runCriteria": [],
+    "runTime": 0,
+    "skippedOption": "Show Skipped",
     "startHeld": false,
     "startHeldReason": null,
-    "summary": "Archive ${ops_system_identifier} Export",
-    "sysId": "def3f9eabc8642d88d7575cd10799b4d",
+    "stepActions": [],
+    "stepConditions": [],
+    "summary": null,
+    "sysId": "ee79b26e82594fcebc16c8f88c267861",
     "timeZonePref": "-- System Default --",
     "twDelayAmount": null,
     "twDelayDuration": "00:00:00:00",
@@ -125,7 +93,42 @@
     "twWorkflowOnly": "-- System Default --",
     "userEstimatedDuration": null,
     "variables": [],
-    "version": 4,
+    "version": 6,
     "virtualResources": [],
-    "waitForOutput": false
+    "workflowEdges": [
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "QAO_SQL_Query",
+                "value": "2"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "QAO_process_sql_results",
+                "value": "5"
+            }
+        }
+    ],
+    "workflowVertices": [
+        {
+            "alias": null,
+            "task": {
+                "value": "QAO_SQL_Query"
+            },
+            "vertexId": "2",
+            "vertexX": "50.5",
+            "vertexY": "20"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "QAO_process_sql_results"
+            },
+            "vertexId": "5",
+            "vertexX": "250.5",
+            "vertexY": "20"
+        }
+    ]
 }

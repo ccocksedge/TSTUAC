@@ -1,5 +1,5 @@
 {
-    "type": "taskWindows",
+    "type": "taskUniversal",
     "actions": {
         "abortActions": [],
         "emailNotifications": [],
@@ -11,15 +11,69 @@
     "agentCluster": null,
     "agentClusterVar": null,
     "agentVar": "${${ops_system_identifier}_windows_agent}",
-    "avgRunTime": 2,
-    "avgRunTimeDisplay": "2 Seconds",
+    "autoCleanup": false,
+    "avgRunTime": 3,
+    "avgRunTimeDisplay": "3 Seconds",
+    "booleanField1": {
+        "label": "spacer1",
+        "name": "spacer1",
+        "value": false
+    },
+    "booleanField2": {
+        "label": "spacer2",
+        "name": "spacer2",
+        "value": false
+    },
+    "booleanField3": {
+        "label": "spacer3",
+        "name": "spacer3",
+        "value": false
+    },
     "broadcastCluster": null,
     "broadcastClusterVar": null,
-    "command": null,
-    "commandOrScript": "Script",
+    "choiceField1": {
+        "label": "Operation",
+        "name": "operation",
+        "value": "listuac"
+    },
+    "choiceField2": {
+        "label": "Selection Method",
+        "name": "method",
+        "value": "bundle"
+    },
+    "choiceField3": {
+        "label": "Exclude List",
+        "name": "excludelist",
+        "value": "agentcluster,businessservice,calendar,credential,databaseconnection,emailconnection,emailtemplate,peoplesoftconnection,sapconnection,snmpmanager"
+    },
+    "choiceField4": {
+        "label": "GitHub Repository",
+        "name": "repository",
+        "value": null
+    },
+    "choiceField5": {
+        "label": "Selection Name",
+        "name": "name",
+        "value": "bundle 2"
+    },
+    "choiceField6": {
+        "label": "GitHub Repository Branch",
+        "name": "branch",
+        "value": null
+    },
     "cpDuration": null,
     "cpDurationUnit": "Minutes",
     "createConsole": false,
+    "credentialField1": {
+        "label": "UC Credential",
+        "name": "uccredential",
+        "value": "ops.admin-token-tstuac"
+    },
+    "credentialField2": {
+        "label": "GitHub Credential",
+        "name": "gitcredential",
+        "value": null
+    },
     "credentials": null,
     "credentialsVar": null,
     "customField1": {
@@ -51,10 +105,25 @@
     "exitCodeText": null,
     "exitCodes": "0",
     "exportReleaseLevel": "7.3.0.0",
-    "exportTable": "ops_task_windows",
-    "firstRun": "2022-09-02 10:00:04 -0400",
+    "exportTable": "ops_task_universal",
+    "firstRun": "2022-09-09 11:16:53 -0400",
     "holdResources": false,
-    "lastRun": "2022-09-09 10:00:10 -0400",
+    "largeTextField1": {
+        "label": "List of Creates",
+        "name": "createlist",
+        "value": "[\"name1\"]"
+    },
+    "largeTextField2": {
+        "label": "List of Updates",
+        "name": "updatelist",
+        "value": null
+    },
+    "largeTextField3": {
+        "label": "List of Deletes",
+        "name": "removelist",
+        "value": null
+    },
+    "lastRun": "2022-09-09 11:54:32 -0400",
     "lastRunTime": 2,
     "lastRunTimeDisplay": "2 Seconds",
     "lfDayConstraint": "None",
@@ -74,23 +143,27 @@
     "lsNthAmount": 5,
     "lsTime": "00:00",
     "lsType": "Time",
-    "maxRunTime": 2,
-    "maxRunTimeDisplay": "2 Seconds",
+    "maxRunTime": 4,
+    "maxRunTimeDisplay": "4 Seconds",
     "minRunTime": 2,
     "minRunTimeDisplay": "2 Seconds",
-    "name": "${ops_system_identifier}_Archive",
+    "name": "list_bundle_definition",
     "notes": [],
     "opswiseGroups": [
-        "Automation_Ops"
+        "Dev_Ops"
     ],
+    "outputConditionOperator": "=",
+    "outputConditionStrategy": "Match Any",
+    "outputConditionValue": null,
+    "outputContentType": null,
     "outputFailureOnly": false,
+    "outputPathExpression": null,
     "outputReturnFile": null,
     "outputReturnNline": "100",
     "outputReturnSline": "1",
     "outputReturnText": null,
-    "outputReturnType": "NONE",
+    "outputReturnType": "OUTERR",
     "outputType": "STDOUT",
-    "parameters": null,
     "resPriority": 10,
     "resolveNameImmediately": false,
     "restrictionPeriod": "None",
@@ -105,14 +178,29 @@
     "retryInterval": 60,
     "retryMaximum": 0,
     "retrySuppressFailure": false,
-    "runCount": 2,
-    "runTime": 4,
+    "runCount": 4,
+    "runTime": 10,
     "runtimeDir": null,
-    "script": "${ops_system_identifier}_Archive",
     "startHeld": false,
     "startHeldReason": null,
-    "summary": "Archive ${ops_system_identifier} Export",
-    "sysId": "def3f9eabc8642d88d7575cd10799b4d",
+    "summary": null,
+    "sysId": "b104ca4a55ad4dce9daada75e825d067",
+    "template": "UC GitHub Integration",
+    "textField1": {
+        "label": "Universal Controller URL",
+        "name": "ucurl",
+        "value": "https://tst-uac:8599/uc"
+    },
+    "textField2": {
+        "label": "GitHub (Local / Private) URL",
+        "name": "giturl",
+        "value": null
+    },
+    "textField3": {
+        "label": "GitHub Repository Path",
+        "name": "directory",
+        "value": null
+    },
     "timeZonePref": "-- System Default --",
     "twDelayAmount": null,
     "twDelayDuration": "00:00:00:00",
@@ -125,7 +213,7 @@
     "twWorkflowOnly": "-- System Default --",
     "userEstimatedDuration": null,
     "variables": [],
-    "version": 4,
+    "version": 1,
     "virtualResources": [],
     "waitForOutput": false
 }

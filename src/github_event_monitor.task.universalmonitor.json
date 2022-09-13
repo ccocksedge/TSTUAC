@@ -3,106 +3,7 @@
     "actions": {
         "abortActions": [],
         "emailNotifications": [],
-        "setVariableActions": [
-            {
-                "description": null,
-                "exitCodes": null,
-                "notificationOption": "Operation Failure",
-                "notifyOnEarlyFinish": false,
-                "notifyOnLateFinish": false,
-                "notifyOnLateStart": false,
-                "notifyOnProjectedLate": false,
-                "status": "Success",
-                "sysId": "737bc876b166450d9597cb676cffd5e0",
-                "variableName": "github_removed",
-                "variableScope": "Global",
-                "variableValue": "${_varJsonPath('ops_trigger_github_events_payload', '$.head_commit.removed')}"
-            },
-            {
-                "description": null,
-                "exitCodes": null,
-                "notificationOption": "Operation Failure",
-                "notifyOnEarlyFinish": false,
-                "notifyOnLateFinish": false,
-                "notifyOnLateStart": false,
-                "notifyOnProjectedLate": false,
-                "status": "Success",
-                "sysId": "7df5bba42fd54e2580d9627a2d37a83a",
-                "variableName": "github_repository",
-                "variableScope": "Global",
-                "variableValue": "${_varJsonPath('ops_trigger_github_events_payload', '$.repository.full_name')}"
-            },
-            {
-                "description": null,
-                "exitCodes": null,
-                "notificationOption": "Operation Failure",
-                "notifyOnEarlyFinish": false,
-                "notifyOnLateFinish": false,
-                "notifyOnLateStart": false,
-                "notifyOnProjectedLate": false,
-                "status": "Success",
-                "sysId": "a5ed408807ee4e33bef6878057662b3f",
-                "variableName": "github_environment",
-                "variableScope": "Global",
-                "variableValue": "${ops_trigger_github_events_environment}"
-            },
-            {
-                "description": null,
-                "exitCodes": null,
-                "notificationOption": "Operation Failure",
-                "notifyOnEarlyFinish": false,
-                "notifyOnLateFinish": false,
-                "notifyOnLateStart": false,
-                "notifyOnProjectedLate": false,
-                "status": "Success",
-                "sysId": "b4e04eebe4574afeb687148a8cd98635",
-                "variableName": "github_added",
-                "variableScope": "Global",
-                "variableValue": "${_varJsonPath('ops_trigger_github_events_payload', '$.head_commit.added')}"
-            },
-            {
-                "description": null,
-                "exitCodes": null,
-                "notificationOption": "Operation Failure",
-                "notifyOnEarlyFinish": false,
-                "notifyOnLateFinish": false,
-                "notifyOnLateStart": false,
-                "notifyOnProjectedLate": false,
-                "status": "Success",
-                "sysId": "d62c6ba5cc244d12a164b93bb57830d9",
-                "variableName": "github_modified",
-                "variableScope": "Global",
-                "variableValue": "${_varJsonPath('ops_trigger_github_events_payload', '$.head_commit.modified')}"
-            },
-            {
-                "description": null,
-                "exitCodes": null,
-                "notificationOption": "Operation Failure",
-                "notifyOnEarlyFinish": false,
-                "notifyOnLateFinish": false,
-                "notifyOnLateStart": false,
-                "notifyOnProjectedLate": false,
-                "status": "Success",
-                "sysId": "dba7d95dc7d14de8b2d44873c82e800b",
-                "variableName": "github_action",
-                "variableScope": "Global",
-                "variableValue": "${ops_trigger_github_events_x_github_event}"
-            },
-            {
-                "description": null,
-                "exitCodes": null,
-                "notificationOption": "Operation Failure",
-                "notifyOnEarlyFinish": false,
-                "notifyOnLateFinish": false,
-                "notifyOnLateStart": false,
-                "notifyOnProjectedLate": false,
-                "status": "Success",
-                "sysId": "e572c5cb7efc40b0bed9dfc44096102b",
-                "variableName": "github_branch",
-                "variableScope": "Global",
-                "variableValue": "${_varJsonPath('ops_trigger_github_events_payload', '$.ref')}"
-            }
-        ],
+        "setVariableActions": [],
         "snmpNotifications": [],
         "systemOperations": []
     },
@@ -146,6 +47,12 @@
                 "name": "environment",
                 "operator": "EQUALS",
                 "value": "tstuac"
+            },
+            {
+                "type": "criterion",
+                "name": "payload",
+                "operator": "DOES_NOT_CONTAIN",
+                "value": "Push from UAC"
             }
         ],
         "logicalOperator": "And"
@@ -215,6 +122,6 @@
     "twWorkflowOnly": "-- System Default --",
     "userEstimatedDuration": null,
     "variables": [],
-    "version": 29,
+    "version": 37,
     "virtualResources": []
 }

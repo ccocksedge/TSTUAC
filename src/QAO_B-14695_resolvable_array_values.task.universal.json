@@ -1,5 +1,5 @@
 {
-    "type": "taskWindows",
+    "type": "taskUniversal",
     "actions": {
         "abortActions": [],
         "emailNotifications": [],
@@ -10,16 +10,34 @@
     "agent": null,
     "agentCluster": null,
     "agentClusterVar": null,
-    "agentVar": "${${ops_system_identifier}_windows_agent}",
-    "avgRunTime": 2,
-    "avgRunTimeDisplay": "2 Seconds",
+    "agentVar": "${${env}_linux_agent}",
+    "arrayField1": {
+        "fields": [
+            {
+                "name": "ABC:File",
+                "value": "${abc}"
+            },
+            {
+                "name": "DEF:File",
+                "value": "${def}"
+            }
+        ],
+        "label": "Parameters",
+        "name": "parameters",
+        "nameTitle": "Parameter Name (Format = DataType:NAME)",
+        "valueTitle": "Parameter Value"
+    },
+    "autoCleanup": false,
     "broadcastCluster": null,
     "broadcastClusterVar": null,
-    "command": null,
-    "commandOrScript": "Script",
     "cpDuration": null,
     "cpDurationUnit": "Minutes",
     "createConsole": false,
+    "credentialField1": {
+        "label": "Oracle Credentials",
+        "name": "credentials",
+        "value": "dummy"
+    },
     "credentials": null,
     "credentialsVar": null,
     "customField1": {
@@ -51,12 +69,10 @@
     "exitCodeText": null,
     "exitCodes": "0",
     "exportReleaseLevel": "7.3.0.0",
-    "exportTable": "ops_task_windows",
-    "firstRun": "2022-09-02 10:00:04 -0400",
+    "exportTable": "ops_task_universal",
+    "firstRun": "",
     "holdResources": false,
-    "lastRun": "2022-09-09 10:00:10 -0400",
-    "lastRunTime": 2,
-    "lastRunTimeDisplay": "2 Seconds",
+    "lastRun": "",
     "lfDayConstraint": "None",
     "lfDuration": "00:00:00:00",
     "lfEnabled": false,
@@ -67,30 +83,30 @@
     "lfOffsetType": "Percentage",
     "lfTime": "00:00",
     "lfType": "Time",
-    "logLevel": "Inherited",
+    "logLevel": "Debug",
     "lsDayConstraint": "None",
     "lsDuration": "00:00:00:00",
     "lsEnabled": false,
     "lsNthAmount": 5,
     "lsTime": "00:00",
     "lsType": "Time",
-    "maxRunTime": 2,
-    "maxRunTimeDisplay": "2 Seconds",
-    "minRunTime": 2,
-    "minRunTimeDisplay": "2 Seconds",
-    "name": "${ops_system_identifier}_Archive",
+    "name": "QAO_B-14695_resolvable_array_values",
     "notes": [],
     "opswiseGroups": [
-        "Automation_Ops"
+        "QA_Ops"
     ],
+    "outputConditionOperator": "=",
+    "outputConditionStrategy": "Match Any",
+    "outputConditionValue": null,
+    "outputContentType": null,
     "outputFailureOnly": false,
+    "outputPathExpression": null,
     "outputReturnFile": null,
     "outputReturnNline": "100",
     "outputReturnSline": "1",
     "outputReturnText": null,
     "outputReturnType": "NONE",
     "outputType": "STDOUT",
-    "parameters": null,
     "resPriority": 10,
     "resolveNameImmediately": false,
     "restrictionPeriod": "None",
@@ -105,14 +121,44 @@
     "retryInterval": 60,
     "retryMaximum": 0,
     "retrySuppressFailure": false,
-    "runCount": 2,
-    "runTime": 4,
+    "runCount": 0,
+    "runTime": 0,
     "runtimeDir": null,
-    "script": "${ops_system_identifier}_Archive",
     "startHeld": false,
     "startHeldReason": null,
-    "summary": "Archive ${ops_system_identifier} Export",
-    "sysId": "def3f9eabc8642d88d7575cd10799b4d",
+    "summary": null,
+    "sysId": "004cea50528842d48e83d309154cf2bf",
+    "template": "Oracle ESS",
+    "textField1": {
+        "label": "Description",
+        "name": "description",
+        "value": null
+    },
+    "textField2": {
+        "label": "Definition Name",
+        "name": "definition",
+        "value": "dsds"
+    },
+    "textField3": {
+        "label": "Package Name",
+        "name": "package",
+        "value": "dsdsd"
+    },
+    "textField4": {
+        "label": "Application",
+        "name": "application",
+        "value": "dsds"
+    },
+    "textField7": {
+        "label": "Oracle URL",
+        "name": "oracleurl",
+        "value": "some_url"
+    },
+    "textField8": {
+        "label": "Definition Type",
+        "name": "type",
+        "value": "sd"
+    },
     "timeZonePref": "-- System Default --",
     "twDelayAmount": null,
     "twDelayDuration": "00:00:00:00",
@@ -124,8 +170,18 @@
     "twWaitType": "None",
     "twWorkflowOnly": "-- System Default --",
     "userEstimatedDuration": null,
-    "variables": [],
-    "version": 4,
+    "variables": [
+        {
+            "allowEmptyOption": false,
+            "allowUnlistedOption": false,
+            "description": null,
+            "name": "def",
+            "options": [],
+            "sysId": "75d9475dbd434794866d94010dd928c4",
+            "value": "anOldValue"
+        }
+    ],
+    "version": 10,
     "virtualResources": [],
     "waitForOutput": false
 }

@@ -1,5 +1,5 @@
 {
-    "type": "taskWindows",
+    "type": "taskUniversal",
     "actions": {
         "abortActions": [],
         "emailNotifications": [],
@@ -11,12 +11,26 @@
     "agentCluster": null,
     "agentClusterVar": null,
     "agentVar": "${${ops_system_identifier}_windows_agent}",
+    "autoCleanup": false,
     "avgRunTime": 2,
     "avgRunTimeDisplay": "2 Seconds",
     "broadcastCluster": null,
     "broadcastClusterVar": null,
-    "command": null,
-    "commandOrScript": "Script",
+    "choiceField1": {
+        "label": "Function",
+        "name": "function",
+        "value": "delete"
+    },
+    "choiceField2": {
+        "label": "Kubernetes Object",
+        "name": "object",
+        "value": "deployment"
+    },
+    "choiceField3": {
+        "label": "Logging Level",
+        "name": "loglevel",
+        "value": "Info"
+    },
     "cpDuration": null,
     "cpDurationUnit": "Minutes",
     "createConsole": false,
@@ -51,10 +65,10 @@
     "exitCodeText": null,
     "exitCodes": "0",
     "exportReleaseLevel": "7.3.0.0",
-    "exportTable": "ops_task_windows",
-    "firstRun": "2022-09-02 10:00:04 -0400",
+    "exportTable": "ops_task_universal",
+    "firstRun": "2022-08-26 11:31:57 -0400",
     "holdResources": false,
-    "lastRun": "2022-09-09 10:00:10 -0400",
+    "lastRun": "2022-08-26 11:31:57 -0400",
     "lastRunTime": 2,
     "lastRunTimeDisplay": "2 Seconds",
     "lfDayConstraint": "None",
@@ -78,19 +92,23 @@
     "maxRunTimeDisplay": "2 Seconds",
     "minRunTime": 2,
     "minRunTimeDisplay": "2 Seconds",
-    "name": "${ops_system_identifier}_Archive",
+    "name": "s3_kubenetes_deployment_delete",
     "notes": [],
     "opswiseGroups": [
-        "Automation_Ops"
+        "Data_Ops"
     ],
+    "outputConditionOperator": "=",
+    "outputConditionStrategy": "Match Any",
+    "outputConditionValue": null,
+    "outputContentType": null,
     "outputFailureOnly": false,
+    "outputPathExpression": null,
     "outputReturnFile": null,
     "outputReturnNline": "100",
     "outputReturnSline": "1",
     "outputReturnText": null,
     "outputReturnType": "NONE",
     "outputType": "STDOUT",
-    "parameters": null,
     "resPriority": 10,
     "resolveNameImmediately": false,
     "restrictionPeriod": "None",
@@ -105,14 +123,29 @@
     "retryInterval": 60,
     "retryMaximum": 0,
     "retrySuppressFailure": false,
-    "runCount": 2,
-    "runTime": 4,
+    "runCount": 1,
+    "runTime": 2,
     "runtimeDir": null,
-    "script": "${ops_system_identifier}_Archive",
+    "scriptField1": {
+        "label": "YAML Definition",
+        "name": "file",
+        "value": null
+    },
     "startHeld": false,
     "startHeldReason": null,
-    "summary": "Archive ${ops_system_identifier} Export",
-    "sysId": "def3f9eabc8642d88d7575cd10799b4d",
+    "summary": null,
+    "sysId": "6b3253ced6784e83ae8b440ee4709cee",
+    "template": "Kubernetes",
+    "textField1": {
+        "label": "Object Name",
+        "name": "objectname",
+        "value": "s3-demo"
+    },
+    "textField2": {
+        "label": "Namespace",
+        "name": "namespace",
+        "value": "product-management"
+    },
     "timeZonePref": "-- System Default --",
     "twDelayAmount": null,
     "twDelayDuration": "00:00:00:00",

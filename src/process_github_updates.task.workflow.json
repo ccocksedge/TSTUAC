@@ -1,0 +1,188 @@
+{
+    "type": "taskWorkflow",
+    "actions": {
+        "abortActions": [],
+        "emailNotifications": [],
+        "setVariableActions": [],
+        "snmpNotifications": [],
+        "systemOperations": []
+    },
+    "avgRunTime": 7,
+    "avgRunTimeDisplay": "7 Seconds",
+    "calculateCp": false,
+    "calendar": null,
+    "cpDuration": null,
+    "cpDurationUnit": "Minutes",
+    "customField1": {
+        "label": "Owner",
+        "value": null
+    },
+    "customField2": {
+        "label": null,
+        "value": null
+    },
+    "efDayConstraint": "None",
+    "efDuration": "00:00:00:00",
+    "efEnabled": false,
+    "efNthAmount": 5,
+    "efOffsetDuration": null,
+    "efOffsetDurationUnit": "Minutes",
+    "efOffsetPercentage": 0,
+    "efOffsetType": "Percentage",
+    "efTime": "00:00",
+    "efType": "Time",
+    "exclusiveTasks": [],
+    "exclusiveWithSelf": false,
+    "executionRestriction": "None",
+    "exportReleaseLevel": "7.3.0.0",
+    "exportTable": "ops_task_workflow",
+    "firstRun": "2022-09-09 13:28:51 -0400",
+    "holdResources": false,
+    "lastRun": "2022-09-13 11:51:35 -0400",
+    "lastRunTime": 76,
+    "lastRunTimeDisplay": "1 Minute 16 Seconds",
+    "layoutOption": "-- None --",
+    "lfDayConstraint": "None",
+    "lfDuration": "00:00:00:00",
+    "lfEnabled": false,
+    "lfNthAmount": 5,
+    "lfOffsetDuration": null,
+    "lfOffsetDurationUnit": "Minutes",
+    "lfOffsetPercentage": 0,
+    "lfOffsetType": "Percentage",
+    "lfTime": "00:00",
+    "lfType": "Time",
+    "logLevel": "Inherited",
+    "lsDayConstraint": "None",
+    "lsDuration": "00:00:00:00",
+    "lsEnabled": false,
+    "lsNthAmount": 5,
+    "lsTime": "00:00",
+    "lsType": "Time",
+    "maxRunTime": 76,
+    "maxRunTimeDisplay": "1 Minute 16 Seconds",
+    "minRunTime": 2,
+    "minRunTimeDisplay": "2 Seconds",
+    "name": "process_github_updates",
+    "notes": [],
+    "numberOfTasks": 2,
+    "opswiseGroups": [
+        "Dev_Ops"
+    ],
+    "overrideCalendar": false,
+    "resPriority": 10,
+    "resolveNameImmediately": false,
+    "restrictionPeriod": "None",
+    "restrictionPeriodAfterDate": null,
+    "restrictionPeriodAfterTime": null,
+    "restrictionPeriodBeforeDate": null,
+    "restrictionPeriodBeforeTime": null,
+    "restrictionPeriodDateList": [],
+    "retainSysIds": true,
+    "runCount": 34,
+    "runCriteria": [],
+    "runTime": 244,
+    "skippedOption": "Show Skipped",
+    "startHeld": false,
+    "startHeldReason": null,
+    "stepActions": [],
+    "stepConditions": [],
+    "summary": null,
+    "sysId": "1195128fc2a94b78a51b2d5505bd7317",
+    "timeZonePref": "-- System Default --",
+    "twDelayAmount": null,
+    "twDelayDuration": "00:00:00:00",
+    "twDelayType": "None",
+    "twWaitAmount": null,
+    "twWaitDayConstraint": "None",
+    "twWaitDuration": "00:00:00:00",
+    "twWaitTime": "00:00",
+    "twWaitType": "None",
+    "twWorkflowOnly": "-- System Default --",
+    "userEstimatedDuration": null,
+    "variables": [
+        {
+            "allowEmptyOption": false,
+            "allowUnlistedOption": false,
+            "description": "GitHub Branch",
+            "name": "github_branch",
+            "options": [],
+            "sysId": "377e9ba261e048fd962189d819f67b6f",
+            "value": "${_varJsonPath('ops_trigger_github_events_payload', '$.ref')}"
+        },
+        {
+            "allowEmptyOption": false,
+            "allowUnlistedOption": false,
+            "description": "List of Definitions to Be Deleted",
+            "name": "github_deletes",
+            "options": [],
+            "sysId": "41ccaa92a21e4f9eb01d3dd45fd178e2",
+            "value": "${_varJsonPath('ops_trigger_github_events_payload', '$.head_commit.removed')}"
+        },
+        {
+            "allowEmptyOption": false,
+            "allowUnlistedOption": false,
+            "description": "List of Modified Items From GitHub",
+            "name": "github_updates",
+            "options": [],
+            "sysId": "5bed6a3758d7462ea58cfebdc043fb95",
+            "value": "${_varJsonPath('ops_trigger_github_events_payload', '$.head_commit.modified')}"
+        },
+        {
+            "allowEmptyOption": false,
+            "allowUnlistedOption": false,
+            "description": "List of New Definitions form GitHub",
+            "name": "github_creates",
+            "options": [],
+            "sysId": "7e084fc87b2e4c90979c8af58a0249af",
+            "value": "${_varJsonPath('ops_trigger_github_events_payload', '$.head_commit.added')}"
+        },
+        {
+            "allowEmptyOption": false,
+            "allowUnlistedOption": false,
+            "description": "GitHub Repository Name",
+            "name": "github_repository",
+            "options": [],
+            "sysId": "b7c032cf939642b4880267e617592969",
+            "value": "${_varJsonPath('ops_trigger_github_events_payload', '$.repository.full_name')}"
+        }
+    ],
+    "version": 12,
+    "virtualResources": [],
+    "workflowEdges": [
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "Approve GitHub Updates",
+                "value": "3"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "Update UAC with GitHub Push",
+                "value": "2"
+            }
+        }
+    ],
+    "workflowVertices": [
+        {
+            "alias": null,
+            "task": {
+                "value": "Update UAC with GitHub Push"
+            },
+            "vertexId": "2",
+            "vertexX": "285.5",
+            "vertexY": "25"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "Approve GitHub Updates"
+            },
+            "vertexId": "3",
+            "vertexX": "72.5",
+            "vertexY": "25"
+        }
+    ]
+}

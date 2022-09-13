@@ -1,5 +1,5 @@
 {
-    "type": "taskWindows",
+    "type": "taskUniversal",
     "actions": {
         "abortActions": [],
         "emailNotifications": [],
@@ -11,12 +11,16 @@
     "agentCluster": null,
     "agentClusterVar": null,
     "agentVar": "${${ops_system_identifier}_windows_agent}",
+    "autoCleanup": false,
     "avgRunTime": 2,
     "avgRunTimeDisplay": "2 Seconds",
     "broadcastCluster": null,
     "broadcastClusterVar": null,
-    "command": null,
-    "commandOrScript": "Script",
+    "choiceField1": {
+        "label": "Teams Function",
+        "name": "teams_function",
+        "value": "Approval Notification"
+    },
     "cpDuration": null,
     "cpDurationUnit": "Minutes",
     "createConsole": false,
@@ -51,10 +55,10 @@
     "exitCodeText": null,
     "exitCodes": "0",
     "exportReleaseLevel": "7.3.0.0",
-    "exportTable": "ops_task_windows",
-    "firstRun": "2022-09-02 10:00:04 -0400",
+    "exportTable": "ops_task_universal",
+    "firstRun": "2022-09-13 10:58:09 -0400",
     "holdResources": false,
-    "lastRun": "2022-09-09 10:00:10 -0400",
+    "lastRun": "2022-09-13 12:45:25 -0400",
     "lastRunTime": 2,
     "lastRunTimeDisplay": "2 Seconds",
     "lfDayConstraint": "None",
@@ -74,23 +78,27 @@
     "lsNthAmount": 5,
     "lsTime": "00:00",
     "lsType": "Time",
-    "maxRunTime": 2,
-    "maxRunTimeDisplay": "2 Seconds",
+    "maxRunTime": 4,
+    "maxRunTimeDisplay": "4 Seconds",
     "minRunTime": 2,
     "minRunTimeDisplay": "2 Seconds",
-    "name": "${ops_system_identifier}_Archive",
+    "name": "MS Teams Inform Channel",
     "notes": [],
     "opswiseGroups": [
-        "Automation_Ops"
+        "Data_Ops"
     ],
+    "outputConditionOperator": "=",
+    "outputConditionStrategy": "Match Any",
+    "outputConditionValue": null,
+    "outputContentType": null,
     "outputFailureOnly": false,
+    "outputPathExpression": null,
     "outputReturnFile": null,
     "outputReturnNline": "100",
     "outputReturnSline": "1",
     "outputReturnText": null,
     "outputReturnType": "NONE",
     "outputType": "STDOUT",
-    "parameters": null,
     "resPriority": 10,
     "resolveNameImmediately": false,
     "restrictionPeriod": "None",
@@ -105,14 +113,54 @@
     "retryInterval": 60,
     "retryMaximum": 0,
     "retrySuppressFailure": false,
-    "runCount": 2,
-    "runTime": 4,
+    "runCount": 6,
+    "runTime": 14,
     "runtimeDir": null,
-    "script": "${ops_system_identifier}_Archive",
     "startHeld": false,
     "startHeldReason": null,
-    "summary": "Archive ${ops_system_identifier} Export",
-    "sysId": "def3f9eabc8642d88d7575cd10799b4d",
+    "summary": null,
+    "sysId": "06b61bce5ad841b7976f651d5e0ee093",
+    "template": "Microsoft Teams Integration",
+    "textField1": {
+        "label": "Job Name",
+        "name": "jobname",
+        "value": "${task_name}"
+    },
+    "textField2": {
+        "label": "Job Status",
+        "name": "jobstatus",
+        "value": "Awaiting Approval"
+    },
+    "textField3": {
+        "label": "MS Teams Webhook",
+        "name": "teams_webhook",
+        "value": "https://stonebranch365.webhook.office.com/webhookb2/e863f1cd-8ad8-4864-87ae-4d908349f0fd@74d8ca68-991f-47c9-bb24-f85b441cc605/IncomingWebhook/c85058e8a7c14ff79b53655b049beb12/ef90c010-6721-4189-b919-b2dbe64cc0b0"
+    },
+    "textField4": {
+        "label": "API Endpoint",
+        "name": "api_endpoint",
+        "value": "https://zywhurz2wannvxi5ymwumrnn6a0wwzsa.lambda-url.us-east-1.on.aws/"
+    },
+    "textField5": {
+        "label": "Execution User",
+        "name": "exec_user",
+        "value": "dev_ops_admin"
+    },
+    "textField6": {
+        "label": "Job Type",
+        "name": "job_type",
+        "value": "UC GitHub Integration "
+    },
+    "textField7": {
+        "label": "Message Title",
+        "name": "title",
+        "value": "${message_title}"
+    },
+    "textField8": {
+        "label": "Message Text",
+        "name": "text",
+        "value": "${message_text}"
+    },
     "timeZonePref": "-- System Default --",
     "twDelayAmount": null,
     "twDelayDuration": "00:00:00:00",
@@ -125,7 +173,7 @@
     "twWorkflowOnly": "-- System Default --",
     "userEstimatedDuration": null,
     "variables": [],
-    "version": 4,
+    "version": 3,
     "virtualResources": [],
     "waitForOutput": false
 }
