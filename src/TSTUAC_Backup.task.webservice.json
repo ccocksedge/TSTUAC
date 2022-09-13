@@ -91,7 +91,7 @@
     "mimeType": "application/json",
     "minRunTime": 2,
     "minRunTimeDisplay": "2 Seconds",
-    "name": "${ops_system_identifier}_Backup",
+    "name": "TSTUAC_Backup",
     "notes": [],
     "opswiseGroups": [
         "Automation_Ops"

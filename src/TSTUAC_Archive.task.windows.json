@@ -78,7 +78,7 @@
     "maxRunTimeDisplay": "2 Seconds",
     "minRunTime": 2,
     "minRunTimeDisplay": "2 Seconds",
-    "name": "${ops_system_identifier}_Archive",
+    "name": "TSTUAC_Archive",
     "notes": [],
     "opswiseGroups": [
         "Automation_Ops"

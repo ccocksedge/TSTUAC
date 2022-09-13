@@ -6,7 +6,7 @@
     "notes": [],
     "opswiseGroups": [],
     "resolveVariables": true,
-    "scriptName": "${ops_system_identifier}_Archive",
+    "scriptName": "TSTUAC_Archive",
     "scriptType": "Script",
     "sysId": "903ecc81ebf54be4bc99d084bcb5b9be",
     "version": 6
