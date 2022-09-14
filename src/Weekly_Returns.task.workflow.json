@@ -59,7 +59,7 @@
     "notes": [],
     "numberOfTasks": 4,
     "opswiseGroups": [
-        "Data_Ops"
+        "Data_Ops", "Automation_Ops"
     ],
     "overrideCalendar": false,
     "resPriority": 10,
