@@ -67,7 +67,7 @@
     "lsTime": "00:00",
     "lsType": "Time",
     "msgclassNew": null,
-    "name": "Test ZOS Task",
+    "name": "NewTest_zOS_Task",
     "notes": [],
     "opswiseGroups": [
         "Automation_Ops"
