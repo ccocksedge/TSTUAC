@@ -1,0 +1,201 @@
+{
+    "type": "taskWorkflow",
+    "actions": {
+        "abortActions": [],
+        "emailNotifications": [],
+        "setVariableActions": [],
+        "snmpNotifications": [],
+        "systemOperations": []
+    },
+    "calculateCp": false,
+    "calendar": null,
+    "cpDuration": null,
+    "cpDurationUnit": "Minutes",
+    "criticalEndpoints": [],
+    "customField1": {
+        "label": "Owner",
+        "value": null
+    },
+    "customField2": {
+        "label": null,
+        "value": null
+    },
+    "efDayConstraint": "None",
+    "efDuration": "00:00:00:00",
+    "efEnabled": false,
+    "efNthAmount": 5,
+    "efOffsetDuration": null,
+    "efOffsetDurationUnit": "Minutes",
+    "efOffsetPercentage": 0,
+    "efOffsetType": "Percentage",
+    "efTime": "00:00",
+    "efType": "Time",
+    "exclusiveTasks": [],
+    "exclusiveWithSelf": false,
+    "executionRestriction": "None",
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_task_workflow",
+    "firstRun": "",
+    "holdResources": false,
+    "lastRun": "",
+    "layoutOption": "-- None --",
+    "lfDayConstraint": "None",
+    "lfDuration": "00:00:00:00",
+    "lfEnabled": false,
+    "lfNthAmount": 5,
+    "lfOffsetDuration": null,
+    "lfOffsetDurationUnit": "Minutes",
+    "lfOffsetPercentage": 0,
+    "lfOffsetType": "Percentage",
+    "lfTime": "00:00",
+    "lfType": "Time",
+    "logLevel": "Inherited",
+    "lsDayConstraint": "None",
+    "lsDuration": "00:00:00:00",
+    "lsEnabled": false,
+    "lsNthAmount": 5,
+    "lsTime": "00:00",
+    "lsType": "Time",
+    "name": "s3_process_new_files",
+    "notes": [],
+    "numberOfTasks": 3,
+    "opswiseGroups": [
+        "Data_Ops"
+    ],
+    "overrideCalendar": false,
+    "resPriority": 10,
+    "resolveNameImmediately": false,
+    "restrictionPeriod": "None",
+    "restrictionPeriodAfterDate": null,
+    "restrictionPeriodAfterTime": null,
+    "restrictionPeriodBeforeDate": null,
+    "restrictionPeriodBeforeTime": null,
+    "restrictionPeriodDateList": [],
+    "retainSysIds": true,
+    "runCount": 0,
+    "runCriteria": [],
+    "runTime": 0,
+    "skippedOption": "Show Skipped",
+    "startHeld": true,
+    "startHeldReason": null,
+    "stepActions": [],
+    "stepConditions": [],
+    "summary": "Process S3 Create Events",
+    "sysId": "596440feb8e046798946649a08eeecd9",
+    "timeZonePref": "-- System Default --",
+    "twDelayAmount": null,
+    "twDelayDuration": "00:00:00:00",
+    "twDelayType": "None",
+    "twWaitAmount": null,
+    "twWaitDayConstraint": "None",
+    "twWaitDuration": "00:00:00:00",
+    "twWaitTime": "00:00",
+    "twWaitType": "None",
+    "twWorkflowOnly": "-- System Default --",
+    "userEstimatedDuration": null,
+    "variables": [
+        {
+            "allowEmptyOption": false,
+            "allowUnlistedOption": false,
+            "description": null,
+            "name": "s3_bucket",
+            "options": [],
+            "sysId": "28a91631640e420e9bed6674c6176779",
+            "value": "${_varJsonPath('ops_trigger_aws_s3_payload', '$.Records[0].s3.bucket.name')}"
+        },
+        {
+            "allowEmptyOption": false,
+            "allowUnlistedOption": false,
+            "description": null,
+            "name": "s3_filename",
+            "options": [],
+            "sysId": "62f258cd298c491f8808d9850fdf41da",
+            "value": "${_varJsonPath('ops_trigger_aws_s3_payload', '$.Records[0].s3.object.key')}"
+        },
+        {
+            "allowEmptyOption": false,
+            "allowUnlistedOption": false,
+            "description": null,
+            "name": "s3_filesize",
+            "options": [],
+            "sysId": "b1ee6173962f42d2bc8048b3ea56d246",
+            "value": "${_varJsonPath('ops_trigger_aws_s3_payload', '$.Records[0].s3.object.size')}"
+        },
+        {
+            "allowEmptyOption": false,
+            "allowUnlistedOption": false,
+            "description": null,
+            "name": "s3_region",
+            "options": [],
+            "sysId": "f5bd0d5d6bb945249a64462a8d5b4b10",
+            "value": "${_varJsonPath('ops_trigger_aws_s3_payload', '$.Records[0].awsRegion')}"
+        }
+    ],
+    "version": 17,
+    "virtualResources": [],
+    "workflowEdges": [
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "s3_kubenetes_deployment",
+                "value": "3"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "s3_download_file",
+                "value": "2"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "points": [
+                {
+                    "x": "310",
+                    "y": "180"
+                }
+            ],
+            "sourceId": {
+                "taskName": "s3_download_file",
+                "value": "2"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "s3_kubenetes_deployment_delete",
+                "value": "5"
+            }
+        }
+    ],
+    "workflowVertices": [
+        {
+            "alias": null,
+            "task": {
+                "value": "s3_download_file"
+            },
+            "vertexId": "2",
+            "vertexX": "280",
+            "vertexY": "60"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "s3_kubenetes_deployment"
+            },
+            "vertexId": "3",
+            "vertexX": "70",
+            "vertexY": "60"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "s3_kubenetes_deployment_delete"
+            },
+            "vertexId": "5",
+            "vertexX": "470",
+            "vertexY": "210"
+        }
+    ]
+}
