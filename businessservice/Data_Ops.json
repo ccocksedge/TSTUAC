@@ -1,0 +1,9 @@
+{
+    "description": "2022-07-28_3",
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_generic_group",
+    "name": "Data_Ops",
+    "retainSysIds": true,
+    "sysId": "08eb8d5f22354633ab6d82a002503af7",
+    "version": 1
+}
