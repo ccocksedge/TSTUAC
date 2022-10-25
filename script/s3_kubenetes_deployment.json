@@ -1,0 +1,16 @@
+{
+    "content": "apiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: s3-demo\nspec:\n  replicas: 1\n  selector:\n    matchLabels:\n      app: s3-demo\n  template:\n    metadata:\n      labels:\n        app: s3-demo\n    spec:\n      containers:\n      - name: s3-demo-postgres\n        image: postgres:latest\n        env:\n        - name: POSTGRES_DB\n          value: 's3demo'\n        - name: POSTGRES_PASSWORD\n          value: 's3demo'\n        - name: POSTGRES_USER\n          value: 's3demo'\n        - name: POSTGRES_HOST_AUTH_METHOD\n          value: 'md5'\n        ports:\n        - containerPort: 5432\n      - name: s3-demo-ua\n        image: universal-agent:7.3.0.0\n        env:\n        - name: UAGNETNAME\n          value: 's3-demo-ua'\n        - name: UAGOMSSERVERS\n          value: '8899@host.docker.internal'\n        - name: UAGTRANSIENT\n          value: 'yes'\n        - name: UAGAGENTCLUSTERS\n          value: 's3_processing'\n        - name: UAGBUSINESSSERVICES\n          value: 'Data_Ops'",
+    "description": null,
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_script",
+    "notes": [],
+    "opswiseGroups": [
+        "Data_Ops"
+    ],
+    "resolveVariables": false,
+    "retainSysIds": true,
+    "scriptName": "s3_kubenetes_deployment",
+    "scriptType": "Data",
+    "sysId": "fded1aa479a743d9a353c2664d891d47",
+    "version": 8
+}
