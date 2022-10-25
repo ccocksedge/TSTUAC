@@ -1,0 +1,271 @@
+{
+    "type": "taskUniversal",
+    "actions": {
+        "abortActions": [],
+        "emailNotifications": [],
+        "setVariableActions": [],
+        "snmpNotifications": [],
+        "systemOperations": []
+    },
+    "agent": null,
+    "agentCluster": null,
+    "agentClusterVar": "${agent_cluster}",
+    "agentVar": null,
+    "autoCleanup": false,
+    "booleanField2": {
+        "label": "Show Details",
+        "name": "show_details",
+        "value": false
+    },
+    "broadcastCluster": null,
+    "broadcastClusterVar": null,
+    "choiceField1": {
+        "label": "Useproxy",
+        "name": "useproxy",
+        "value": "0"
+    },
+    "choiceField10": {
+        "label": "interval",
+        "name": "interval",
+        "value": "10"
+    },
+    "choiceField11": {
+        "label": "ACL",
+        "name": "acl",
+        "value": "bucket-owner-full-control"
+    },
+    "choiceField2": {
+        "label": "Proxy Type",
+        "name": "proxy_type",
+        "value": "http"
+    },
+    "choiceField3": {
+        "label": "Action",
+        "name": "action",
+        "value": "download-file"
+    },
+    "choiceField4": {
+        "label": "Operation",
+        "name": "operation",
+        "value": "move"
+    },
+    "choiceField5": {
+        "label": "Download Write Options",
+        "name": "writeoptions_download",
+        "value": "True"
+    },
+    "choiceField6": {
+        "label": "Upload Write Options",
+        "name": "writeoptions_upload",
+        "value": "False"
+    },
+    "choiceField7": {
+        "label": "Loglevel",
+        "name": "loglevel",
+        "value": "INFO"
+    },
+    "choiceField8": {
+        "label": "Service Name",
+        "name": "service_name",
+        "value": "sts"
+    },
+    "choiceField9": {
+        "label": "Role Based Access",
+        "name": "rbca",
+        "value": "no"
+    },
+    "cpDuration": null,
+    "cpDurationUnit": "Minutes",
+    "createConsole": false,
+    "credentialField1": {
+        "label": "Proxycred",
+        "name": "proxycred",
+        "value": null
+    },
+    "credentialField3": {
+        "label": "AWS_ACCESS_KEY_ID",
+        "name": "aws_access_key_id",
+        "value": "s3_key_id"
+    },
+    "credentialField4": {
+        "label": "AWS_SECRET_ACCESS_KEY",
+        "name": "aws_secret_access_key",
+        "value": "s3_key"
+    },
+    "credentials": null,
+    "credentialsVar": null,
+    "customField1": {
+        "label": "Owner",
+        "value": null
+    },
+    "customField2": {
+        "label": null,
+        "value": null
+    },
+    "desktopInteract": false,
+    "efDayConstraint": "None",
+    "efDuration": "00:00:00:00",
+    "efEnabled": false,
+    "efNthAmount": 5,
+    "efOffsetDuration": null,
+    "efOffsetDurationUnit": "Minutes",
+    "efOffsetPercentage": 0,
+    "efOffsetType": "Percentage",
+    "efTime": "00:00",
+    "efType": "Time",
+    "elevateUser": false,
+    "environment": [],
+    "exclusiveTasks": [],
+    "exclusiveWithSelf": false,
+    "executionRestriction": "None",
+    "exitCodeOutput": null,
+    "exitCodeProcessing": "Success Exitcode Range",
+    "exitCodeText": null,
+    "exitCodes": "0",
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_task_universal",
+    "firstRun": "",
+    "holdResources": false,
+    "lastRun": "",
+    "lfDayConstraint": "None",
+    "lfDuration": "00:00:00:00",
+    "lfEnabled": false,
+    "lfNthAmount": 5,
+    "lfOffsetDuration": null,
+    "lfOffsetDurationUnit": "Minutes",
+    "lfOffsetPercentage": 0,
+    "lfOffsetType": "Percentage",
+    "lfTime": "00:00",
+    "lfType": "Time",
+    "logLevel": "Inherited",
+    "lsDayConstraint": "None",
+    "lsDuration": "00:00:00:00",
+    "lsEnabled": false,
+    "lsNthAmount": 5,
+    "lsTime": "00:00",
+    "lsType": "Time",
+    "name": "s3_download_file",
+    "notes": [],
+    "opswiseGroups": [
+        "Data_Ops"
+    ],
+    "outputConditionOperator": "=",
+    "outputConditionStrategy": "Match Any",
+    "outputConditionValue": null,
+    "outputContentType": null,
+    "outputFailureOnly": false,
+    "outputPathExpression": null,
+    "outputReturnFile": null,
+    "outputReturnNline": "100",
+    "outputReturnSline": "1",
+    "outputReturnText": null,
+    "outputReturnType": "OUTERR",
+    "outputType": "STDOUT",
+    "resPriority": 10,
+    "resolveNameImmediately": false,
+    "restrictionPeriod": "None",
+    "restrictionPeriodAfterDate": null,
+    "restrictionPeriodAfterTime": null,
+    "restrictionPeriodBeforeDate": null,
+    "restrictionPeriodBeforeTime": null,
+    "restrictionPeriodDateList": [],
+    "retainSysIds": true,
+    "retryExitCodes": null,
+    "retryIndefinitely": false,
+    "retryInterval": 60,
+    "retryMaximum": 0,
+    "retrySuppressFailure": false,
+    "runCount": 0,
+    "runTime": 0,
+    "runtimeDir": null,
+    "startHeld": false,
+    "startHeldReason": null,
+    "summary": "Filename = ${s3_filename} Bucket = ${s3_bucket}",
+    "sysId": "4feae33fa00043c6a0595cb728f41327",
+    "template": "AWS-S3",
+    "textField1": {
+        "label": "Proxy",
+        "name": "proxy",
+        "value": null
+    },
+    "textField10": {
+        "label": "Role ARN",
+        "name": "rolearn",
+        "value": null
+    },
+    "textField11": {
+        "label": "Endpoint URL",
+        "name": "endpoint_url",
+        "value": null
+    },
+    "textField12": {
+        "label": "Target S3Key",
+        "name": "target_object",
+        "value": null
+    },
+    "textField2": {
+        "label": "Port",
+        "name": "port",
+        "value": null
+    },
+    "textField3": {
+        "label": "Bucket",
+        "name": "object_store",
+        "value": "${s3_bucket}"
+    },
+    "textField4": {
+        "label": "S3Key",
+        "name": "object",
+        "value": "${s3_filename}"
+    },
+    "textField5": {
+        "label": "AWS_DEFAULT_REGION",
+        "name": "aws_default_region",
+        "value": "us-east-1"
+    },
+    "textField6": {
+        "label": "Sourcefile",
+        "name": "sourcefile",
+        "value": null
+    },
+    "textField7": {
+        "label": "Prefix",
+        "name": "prefix",
+        "value": null
+    },
+    "textField8": {
+        "label": "Target Bucket",
+        "name": "target_object_store",
+        "value": null
+    },
+    "textField9": {
+        "label": "Target Directory",
+        "name": "targetdir",
+        "value": "/tmp"
+    },
+    "timeZonePref": "-- System Default --",
+    "twDelayAmount": null,
+    "twDelayDuration": "00:00:00:00",
+    "twDelayType": "None",
+    "twWaitAmount": null,
+    "twWaitDayConstraint": "None",
+    "twWaitDuration": "00:00:00:00",
+    "twWaitTime": "00:00",
+    "twWaitType": "None",
+    "twWorkflowOnly": "-- System Default --",
+    "userEstimatedDuration": null,
+    "variables": [
+        {
+            "allowEmptyOption": false,
+            "allowUnlistedOption": false,
+            "description": "Agent Cluster Name",
+            "name": "agent_cluster",
+            "options": [],
+            "sysId": "f73e8c0299af4f62967a15116150e9a2",
+            "value": "S3_processing"
+        }
+    ],
+    "version": 13,
+    "virtualResources": [],
+    "waitForOutput": false
+}
