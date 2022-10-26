@@ -1,0 +1,15 @@
+{
+    "content": "echo ${_resolveadv('resolve_1', 'UNDEF', true)}\necho ${_resolveadv('resolve_2', 'UNDEF', true)}\necho ${resolve_3}\necho ${_resolveadv('resolve_3', 'UNDEF', true)}\necho ${_resolveadv('resolve_3', 'UNDEF', false)}",
+    "description": null,
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_script",
+    "notes": [],
+    "opswiseGroups": [
+        "Support"
+    ],
+    "resolveVariables": true,
+    "scriptName": "Resolve Variable (Advanced)",
+    "scriptType": "Script",
+    "sysId": "cafab3b073de48b4843dff3bf8c8281e",
+    "version": 4
+}
