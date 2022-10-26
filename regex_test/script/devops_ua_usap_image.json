@@ -1,0 +1,16 @@
+{
+    "content": "# Set the base image to RedHat UBI\nFROM registry.access.redhat.com/ubi8/ubi:latest\n# create label\nLABEL name=\"universal-agent\" \nLABEL vendor=\"Stonebranch\" \nLABEL version=\"${ua_version}\" \nLABEL release=\"${ua_release}\" \nLABEL summary=\"Universal Agent installed in a UBI based Image\" \nLABEL description=\"Universal Agent can be used for Scheduling and File Transfer\"\nLABEL author=\"Colin Cocksedge <colin.cocksedge@stonebranch.com>\"\n#\n# create license directory and add product license\nRUN mkdir /licenses\nADD /licenses/Terms_and_Conditions.pdf /licenses\n# Install ua\nARG ua_version\nADD /install-files/sb-${ua_version}-linux-3.10-x86_64.tar.Z /tmp\nRUN zcat /tmp/sb-${ua_version}-linux-3.10-x86_64.tar.Z | tar xvf - && ./unvinst --network_provider oms --oms_servers 7878@localhost --python yes --oms_port 7878 --security inherit --ubroker_start no && rm unvinst *.rpm *.tar upimerge.sh upimerge.log usrmode.inc install.log /tmp/sb-${ua_version}-linux-3.10-x86_64.tar.Z \nEXPOSE 7887 7878\n#\n# Set Permissions for Arbitrary ID Support\nRUN chgrp -R 0 /etc/universal && chmod -R g=u /etc/universal && chgrp -R 0 /opt/universal && chmod -R g=u /opt/universal && chgrp -R 0 /var/opt/universal && chmod -R g=u /var/opt/universal && chmod g=u /etc/passwd\n# Temp Change\n# RUN /opt/universal/python/bin/pip3.7 install cryptography --upgrade\n# Update path \nENV PATH \"$PATH:/opt/universal/bin\"\n# Add SAP RFC Libs\nRUN mkdir /usr/local/lib/sap\nADD /usap_rfc/SAP_NW_RFC_SDK_Lin_x64.tar /usr/local/lib/sap\nENV LD_LIBRARY_PATH \"$LD_LIBRARY_PATH:/usr/local/lib/sap\"\n# Set Default userid\nUSER 10010\n# Add entrypoint script \nCOPY ./ua_entrypoint /\n# Set entrypoint \nENTRYPOINT [ \"./ua_entrypoint\" ]",
+    "description": "Build UA image with SAP RFC Libs",
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_script",
+    "notes": [],
+    "opswiseGroups": [
+        "Automation_Ops",
+        "Dev_Ops"
+    ],
+    "resolveVariables": true,
+    "scriptName": "devops_ua_usap_image",
+    "scriptType": "Data",
+    "sysId": "0660351dc49941d1acc1539541e91023",
+    "version": 5
+}
