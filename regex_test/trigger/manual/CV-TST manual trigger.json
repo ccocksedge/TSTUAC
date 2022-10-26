@@ -1,0 +1,34 @@
+{
+    "type": "triggerManual",
+    "calendar": "System Default",
+    "customField1": {
+        "label": "Owner",
+        "value": null
+    },
+    "customField2": {
+        "label": null,
+        "value": null
+    },
+    "description": null,
+    "disabledTime": "",
+    "enabled": false,
+    "enabledTime": "",
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_trigger_manual",
+    "name": "CV-TST manual trigger",
+    "nextScheduledTime": "",
+    "notes": [],
+    "opswiseGroups": [
+        "Retail"
+    ],
+    "rdExcludeBackup": false,
+    "retainSysIds": true,
+    "retentionDuration": 1,
+    "retentionDurationPurge": false,
+    "retentionDurationUnit": "Days",
+    "sysId": "28ee2fe75689458fbd7c2cbf35159ada",
+    "tasks": [],
+    "timeZone": null,
+    "variables": [],
+    "version": 1
+}
