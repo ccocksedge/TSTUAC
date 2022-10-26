@@ -1,0 +1,73 @@
+{
+    "type": "triggerUm",
+    "action": "Do Not Trigger",
+    "calendar": "System Default",
+    "customField1": {
+        "label": "Owner",
+        "value": null
+    },
+    "customField2": {
+        "label": null,
+        "value": null
+    },
+    "description": null,
+    "disabledTime": "",
+    "enabled": false,
+    "enabledEnd": "00:00",
+    "enabledStart": "00:00",
+    "enabledTime": "",
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_trigger_um",
+    "name": "s3_new_files_trigger",
+    "nextScheduledTime": "",
+    "notes": [],
+    "opswiseGroups": [
+        "Data_Ops"
+    ],
+    "rdExcludeBackup": false,
+    "restrictedTimes": false,
+    "restriction": false,
+    "restrictionAdjective": "Every",
+    "restrictionComplex": false,
+    "restrictionMode": "Or",
+    "restrictionNoun": {
+        "value": "Day"
+    },
+    "restrictionNouns": [
+        {
+            "value": "Day"
+        }
+    ],
+    "restrictionNthAmount": 5,
+    "restrictionQualifier": {
+        "value": "Year"
+    },
+    "restrictionQualifiers": [
+        {
+            "value": "Year"
+        }
+    ],
+    "restrictionSimple": false,
+    "retainSysIds": true,
+    "retentionDuration": 1,
+    "retentionDurationPurge": false,
+    "retentionDurationUnit": "Days",
+    "situation": "Holiday",
+    "skipActive": false,
+    "skipAfterDate": null,
+    "skipAfterTime": null,
+    "skipBeforeDate": null,
+    "skipBeforeTime": null,
+    "skipCondition": "None",
+    "skipCount": 0,
+    "skipDateList": [],
+    "skipRestriction": "None",
+    "sysId": "60e9f7f90a884b0a87d30b9bb0e9b8d0",
+    "taskMonitor": "S3_new_files_monitor",
+    "tasks": [
+        "s3_process_new_files"
+    ],
+    "timeZone": null,
+    "variables": [],
+    "version": 1
+}
