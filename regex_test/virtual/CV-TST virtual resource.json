@@ -1,0 +1,14 @@
+{
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_virtual_resource",
+    "limit": 10,
+    "name": "CV-TST virtual resource",
+    "opswiseGroups": [
+        "Retail"
+    ],
+    "retainSysIds": true,
+    "summary": null,
+    "sysId": "9c9cc05fdf2247ecacc94c920ce00473",
+    "type": "Renewable",
+    "version": 1
+}
