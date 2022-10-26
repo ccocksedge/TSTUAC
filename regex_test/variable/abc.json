@@ -1,0 +1,11 @@
+{
+    "description": null,
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_variable",
+    "name": "abc",
+    "opswiseGroups": [],
+    "retainSysIds": true,
+    "sysId": "bce4bd3415d44d1e86a1eec2a78a663e",
+    "value": "aNewValue",
+    "version": 1
+}
