@@ -1,0 +1,13 @@
+{
+    "description": null,
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_variable",
+    "name": "resolve_1",
+    "opswiseGroups": [
+        "Support"
+    ],
+    "retainSysIds": true,
+    "sysId": "4e779b41a7dc456bbca946fe9b4a1c67",
+    "value": "Hello Universe",
+    "version": 1
+}
