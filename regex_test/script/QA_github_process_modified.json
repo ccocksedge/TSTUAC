@@ -1,0 +1,15 @@
+{
+    "content": "echo \"Modified = ${_resolveadv('github_modified', 'BLANK', true)}\"",
+    "description": null,
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_script",
+    "notes": [],
+    "opswiseGroups": [
+        "QA_Ops"
+    ],
+    "resolveVariables": true,
+    "scriptName": "QA_github_process_modified",
+    "scriptType": "Script",
+    "sysId": "06b81f0bc6fa4d8fb7a8e96aa32c6b9b",
+    "version": 5
+}
