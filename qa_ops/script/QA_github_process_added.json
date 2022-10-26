@@ -1,0 +1,16 @@
+{
+    "content": "echo \"Added = ${_resolveadv('github_added', 'BLANK', true)}\"",
+    "description": null,
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_script",
+    "notes": [],
+    "opswiseGroups": [
+        "QA_Ops"
+    ],
+    "resolveVariables": true,
+    "retainSysIds": true,
+    "scriptName": "QA_github_process_added",
+    "scriptType": "Script",
+    "sysId": "40291aba5aa447faa46b29b6dbc9d6d8",
+    "version": 4
+}
