@@ -1,0 +1,224 @@
+{
+    "type": "taskUniversal",
+    "actions": {
+        "abortActions": [],
+        "emailNotifications": [],
+        "setVariableActions": [],
+        "snmpNotifications": [],
+        "systemOperations": []
+    },
+    "agent": null,
+    "agentCluster": null,
+    "agentClusterVar": null,
+    "agentVar": "${${ops_system_identifier}_windows_agent}",
+    "autoCleanup": false,
+    "avgRunTime": 17,
+    "avgRunTimeDisplay": "17 Seconds",
+    "booleanField1": {
+        "label": "spacer1",
+        "name": "spacer1",
+        "value": false
+    },
+    "booleanField2": {
+        "label": "spacer2",
+        "name": "spacer2",
+        "value": false
+    },
+    "booleanField3": {
+        "label": "spacer3",
+        "name": "spacer3",
+        "value": false
+    },
+    "broadcastCluster": null,
+    "broadcastClusterVar": null,
+    "choiceField1": {
+        "label": "Operation",
+        "name": "operation",
+        "value": "copy_to_git"
+    },
+    "choiceField2": {
+        "label": "Selection Method",
+        "name": "method",
+        "value": "bundle"
+    },
+    "choiceField3": {
+        "label": "Exclude List",
+        "name": "excludelist",
+        "value": "agentcluster,calendar,databaseconnection,emailconnection,emailtemplate,peoplesoftconnection,sapconnection,snmpmanager"
+    },
+    "choiceField4": {
+        "label": "GitHub Repository",
+        "name": "repository",
+        "value": "ccocksedge/uac-tstuac"
+    },
+    "choiceField5": {
+        "label": "Selection Name",
+        "name": "name",
+        "value": "bundle 2"
+    },
+    "choiceField6": {
+        "label": "GitHub Repository Branch",
+        "name": "branch",
+        "value": "demo"
+    },
+    "choiceField7": {
+        "label": "Git Repository Type",
+        "name": "git_repository_type",
+        "value": "gitlab"
+    },
+    "cpDuration": null,
+    "cpDurationUnit": "Minutes",
+    "createConsole": false,
+    "credentialField1": {
+        "label": "UC Credential",
+        "name": "uccredential",
+        "value": "ops.admin-token-tstuac"
+    },
+    "credentialField2": {
+        "label": "GitHub Credential",
+        "name": "gitcredential",
+        "value": "ccocksedge_gitlab"
+    },
+    "credentials": null,
+    "credentialsVar": null,
+    "customField1": {
+        "label": "Owner",
+        "value": null
+    },
+    "customField2": {
+        "label": null,
+        "value": null
+    },
+    "desktopInteract": false,
+    "efDayConstraint": "None",
+    "efDuration": "00:00:00:00",
+    "efEnabled": false,
+    "efNthAmount": 5,
+    "efOffsetDuration": null,
+    "efOffsetDurationUnit": "Minutes",
+    "efOffsetPercentage": 0,
+    "efOffsetType": "Percentage",
+    "efTime": "00:00",
+    "efType": "Time",
+    "elevateUser": false,
+    "environment": [],
+    "exclusiveTasks": [],
+    "exclusiveWithSelf": false,
+    "executionRestriction": "None",
+    "exitCodeOutput": null,
+    "exitCodeProcessing": "Success Exitcode Range",
+    "exitCodeText": null,
+    "exitCodes": "0",
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_task_universal",
+    "firstRun": "2022-10-21 11:43:27 -0400",
+    "holdResources": false,
+    "largeTextField1": {
+        "label": "List of Creates",
+        "name": "createlist",
+        "value": null
+    },
+    "largeTextField2": {
+        "label": "List of Updates",
+        "name": "updatelist",
+        "value": null
+    },
+    "largeTextField3": {
+        "label": "List of Deletes",
+        "name": "removelist",
+        "value": null
+    },
+    "lastRun": "2022-10-26 09:33:41 -0400",
+    "lastRunTime": 58,
+    "lastRunTimeDisplay": "58 Seconds",
+    "lfDayConstraint": "None",
+    "lfDuration": "00:00:00:00",
+    "lfEnabled": false,
+    "lfNthAmount": 5,
+    "lfOffsetDuration": null,
+    "lfOffsetDurationUnit": "Minutes",
+    "lfOffsetPercentage": 0,
+    "lfOffsetType": "Percentage",
+    "lfTime": "00:00",
+    "lfType": "Time",
+    "logLevel": "Inherited",
+    "lsDayConstraint": "None",
+    "lsDuration": "00:00:00:00",
+    "lsEnabled": false,
+    "lsNthAmount": 5,
+    "lsTime": "00:00",
+    "lsType": "Time",
+    "maxRunTime": 58,
+    "maxRunTimeDisplay": "58 Seconds",
+    "minRunTime": 3,
+    "minRunTimeDisplay": "3 Seconds",
+    "name": "GitLab_copytogit_bundle_definition",
+    "notes": [],
+    "opswiseGroups": [
+        "Dev_Ops"
+    ],
+    "outputConditionOperator": "=",
+    "outputConditionStrategy": "Match Any",
+    "outputConditionValue": null,
+    "outputContentType": null,
+    "outputFailureOnly": false,
+    "outputPathExpression": null,
+    "outputReturnFile": null,
+    "outputReturnNline": "100",
+    "outputReturnSline": "1",
+    "outputReturnText": null,
+    "outputReturnType": "OUTERR",
+    "outputType": "STDOUT",
+    "resPriority": 10,
+    "resolveNameImmediately": false,
+    "restrictionPeriod": "None",
+    "restrictionPeriodAfterDate": null,
+    "restrictionPeriodAfterTime": null,
+    "restrictionPeriodBeforeDate": null,
+    "restrictionPeriodBeforeTime": null,
+    "restrictionPeriodDateList": [],
+    "retainSysIds": true,
+    "retryExitCodes": null,
+    "retryIndefinitely": false,
+    "retryInterval": 60,
+    "retryMaximum": 0,
+    "retrySuppressFailure": false,
+    "runCount": 4,
+    "runTime": 67,
+    "runtimeDir": null,
+    "startHeld": false,
+    "startHeldReason": null,
+    "summary": null,
+    "sysId": "5b850cc47c1d40868e9cb89bba50ed5f",
+    "template": "Jobs-as-Code",
+    "textField1": {
+        "label": "Universal Controller URL",
+        "name": "ucurl",
+        "value": "https://tst-uac:8599/uc"
+    },
+    "textField2": {
+        "label": "GitHub (Local / Private) URL",
+        "name": "giturl",
+        "value": null
+    },
+    "textField3": {
+        "label": "GitHub Repository Path",
+        "name": "directory",
+        "value": "bundle"
+    },
+    "timeZonePref": "-- System Default --",
+    "twDelayAmount": null,
+    "twDelayDuration": "00:00:00:00",
+    "twDelayType": "None",
+    "twWaitAmount": null,
+    "twWaitDayConstraint": "None",
+    "twWaitDuration": "00:00:00:00",
+    "twWaitTime": "00:00",
+    "twWaitType": "None",
+    "twWorkflowOnly": "-- System Default --",
+    "userEstimatedDuration": null,
+    "variables": [],
+    "version": 3,
+    "virtualResources": [],
+    "waitForOutput": false
+}
