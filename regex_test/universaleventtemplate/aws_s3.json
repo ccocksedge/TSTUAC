@@ -1,0 +1,9 @@
+{
+    "attributes": [],
+    "attributesPolicy": "Include Attributes",
+    "description": "Catch S3 Create Events for the UDMG Bucket",
+    "label": "AWS S3 Events",
+    "name": "aws_s3",
+    "sysId": "911040d4db2244f3970d39417220c6f4",
+    "ttl": 0
+}
