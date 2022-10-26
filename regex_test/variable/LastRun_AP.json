@@ -1,0 +1,11 @@
+{
+    "description": null,
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_variable",
+    "name": "LastRun_AP",
+    "opswiseGroups": [],
+    "retainSysIds": true,
+    "sysId": "52e440ce04794ed4ad8f12961ce4eecf",
+    "value": "2022-08-01 12:56:38",
+    "version": 1
+}
