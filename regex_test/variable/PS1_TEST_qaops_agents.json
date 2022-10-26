@@ -1,0 +1,11 @@
+{
+    "description": "Default Agent Cluster",
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_variable",
+    "name": "PS1_TEST_qaops_agents",
+    "opswiseGroups": [],
+    "retainSysIds": true,
+    "sysId": "fb05d23ee129490a8096fdac9c3244e0",
+    "value": "QA_Ops",
+    "version": 5
+}
