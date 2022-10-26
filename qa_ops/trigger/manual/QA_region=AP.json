@@ -1,0 +1,46 @@
+{
+    "type": "triggerManual",
+    "calendar": "System Default",
+    "customField1": {
+        "label": "Owner",
+        "value": null
+    },
+    "customField2": {
+        "label": null,
+        "value": null
+    },
+    "description": null,
+    "disabledTime": "",
+    "enabled": false,
+    "enabledTime": "",
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_trigger_manual",
+    "name": "QA_region=AP",
+    "nextScheduledTime": "",
+    "notes": [],
+    "opswiseGroups": [
+        "QA_Ops"
+    ],
+    "rdExcludeBackup": false,
+    "retainSysIds": true,
+    "retentionDuration": 1,
+    "retentionDurationPurge": false,
+    "retentionDurationUnit": "Days",
+    "sysId": "c430650749bd477bbb8d290c59598e07",
+    "tasks": [
+        "Env ${ops_system_identifier} Region ${region}"
+    ],
+    "timeZone": null,
+    "variables": [
+        {
+            "allowEmptyOption": false,
+            "allowUnlistedOption": false,
+            "description": null,
+            "name": "region",
+            "options": [],
+            "sysId": "82e0c220d1db423aa76fa7ab50fca1ad",
+            "value": "AP"
+        }
+    ],
+    "version": 2
+}
