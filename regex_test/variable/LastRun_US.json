@@ -1,0 +1,11 @@
+{
+    "description": null,
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_variable",
+    "name": "LastRun_US",
+    "opswiseGroups": [],
+    "retainSysIds": true,
+    "sysId": "8c3001f0d03646ef9eee663fec5fa178",
+    "value": "2022-08-10 14:42:31",
+    "version": 4
+}
