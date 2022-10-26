@@ -1,0 +1,143 @@
+{
+    "type": "taskWorkflow",
+    "actions": {
+        "abortActions": [],
+        "emailNotifications": [],
+        "setVariableActions": [],
+        "snmpNotifications": [],
+        "systemOperations": []
+    },
+    "avgRunTime": 523,
+    "avgRunTimeDisplay": "8 Minutes 43 Seconds",
+    "calculateCp": false,
+    "calendar": null,
+    "cpDuration": null,
+    "cpDurationUnit": "Minutes",
+    "criticalEndpoints": [],
+    "customField1": {
+        "label": "Owner",
+        "value": null
+    },
+    "customField2": {
+        "label": null,
+        "value": null
+    },
+    "efDayConstraint": "None",
+    "efDuration": "00:00:00:00",
+    "efEnabled": false,
+    "efNthAmount": 5,
+    "efOffsetDuration": null,
+    "efOffsetDurationUnit": "Minutes",
+    "efOffsetPercentage": 0,
+    "efOffsetType": "Percentage",
+    "efTime": "00:00",
+    "efType": "Time",
+    "exclusiveTasks": [],
+    "exclusiveWithSelf": false,
+    "executionRestriction": "None",
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_task_workflow",
+    "firstRun": "2022-10-19 08:57:44 -0400",
+    "holdResources": false,
+    "lastRun": "2022-10-21 10:00:04 -0400",
+    "lastRunTime": 4,
+    "lastRunTimeDisplay": "4 Seconds",
+    "layoutOption": "-- None --",
+    "lfDayConstraint": "None",
+    "lfDuration": "00:00:00:00",
+    "lfEnabled": false,
+    "lfNthAmount": 5,
+    "lfOffsetDuration": null,
+    "lfOffsetDurationUnit": "Minutes",
+    "lfOffsetPercentage": 0,
+    "lfOffsetType": "Percentage",
+    "lfTime": "00:00",
+    "lfType": "Time",
+    "logLevel": "Inherited",
+    "lsDayConstraint": "None",
+    "lsDuration": "00:00:00:00",
+    "lsEnabled": false,
+    "lsNthAmount": 5,
+    "lsTime": "00:00",
+    "lsType": "Time",
+    "maxRunTime": 1564,
+    "maxRunTimeDisplay": "26 Minutes 4 Seconds",
+    "minRunTime": 2,
+    "minRunTimeDisplay": "2 Seconds",
+    "name": "PS1_TEST_Weekly_Backup",
+    "notes": [],
+    "numberOfTasks": 2,
+    "opswiseGroups": [
+        "Automation_Ops"
+    ],
+    "overrideCalendar": false,
+    "resPriority": 10,
+    "resolveNameImmediately": false,
+    "restrictionPeriod": "None",
+    "restrictionPeriodAfterDate": null,
+    "restrictionPeriodAfterTime": null,
+    "restrictionPeriodBeforeDate": null,
+    "restrictionPeriodBeforeTime": null,
+    "restrictionPeriodDateList": [],
+    "retainSysIds": true,
+    "runCount": 3,
+    "runCriteria": [],
+    "runTime": 1570,
+    "skippedOption": "Show Skipped",
+    "startHeld": false,
+    "startHeldReason": null,
+    "stepActions": [],
+    "stepConditions": [],
+    "summary": "Bulk Export and Archive",
+    "sysId": "742aab9f360646d5b98630a75fae801b",
+    "timeZonePref": "-- System Default --",
+    "twDelayAmount": null,
+    "twDelayDuration": "00:00:00:00",
+    "twDelayType": "None",
+    "twWaitAmount": null,
+    "twWaitDayConstraint": "None",
+    "twWaitDuration": "00:00:00:00",
+    "twWaitTime": "00:00",
+    "twWaitType": "None",
+    "twWorkflowOnly": "-- System Default --",
+    "userEstimatedDuration": null,
+    "variables": [],
+    "version": 6,
+    "virtualResources": [],
+    "workflowEdges": [
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "PS1_TEST_Backup",
+                "value": "2"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "PS1_TEST_Archive",
+                "value": "3"
+            }
+        }
+    ],
+    "workflowVertices": [
+        {
+            "alias": null,
+            "task": {
+                "value": "PS1_TEST_Backup"
+            },
+            "vertexId": "2",
+            "vertexX": "53",
+            "vertexY": "25"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "PS1_TEST_Archive"
+            },
+            "vertexId": "3",
+            "vertexX": "212.5",
+            "vertexY": "25"
+        }
+    ]
+}
