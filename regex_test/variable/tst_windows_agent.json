@@ -1,0 +1,11 @@
+{
+    "description": null,
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_variable",
+    "name": "tst_windows_agent",
+    "opswiseGroups": [],
+    "retainSysIds": true,
+    "sysId": "94b37ad631234224bf05dbb36a83021f",
+    "value": "sbus77",
+    "version": 1
+}
