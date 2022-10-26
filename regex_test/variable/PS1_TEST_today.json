@@ -1,0 +1,11 @@
+{
+    "description": "Date = Actual",
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_variable",
+    "name": "PS1_TEST_today",
+    "opswiseGroups": [],
+    "retainSysIds": true,
+    "sysId": "c2d730c02cbe4f09a838e32eb4d38693",
+    "value": "2022-10-26",
+    "version": 12
+}
