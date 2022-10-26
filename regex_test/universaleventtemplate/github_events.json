@@ -1,0 +1,20 @@
+{
+    "attributes": [
+        {
+            "label": "Payload",
+            "name": "payload",
+            "type": "Text"
+        },
+        {
+            "label": "Environment",
+            "name": "environment",
+            "type": "Text"
+        }
+    ],
+    "attributesPolicy": "Include Attributes",
+    "description": "GitHub Push Webhook",
+    "label": "GitHub Events",
+    "name": "github_events",
+    "sysId": "4e756aa8a9aa4c46844177856dd686b5",
+    "ttl": 0
+}
