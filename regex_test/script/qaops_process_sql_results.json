@@ -1,0 +1,15 @@
+{
+    "content": "echo 1 - ${sql_result_columns}\necho 2 - ${sql_result_columns_2}\necho 3 - ${_resultsColumnNamesFromTask('QAO_SQL_QUERY')}",
+    "description": null,
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_script",
+    "notes": [],
+    "opswiseGroups": [
+        "QA_Ops"
+    ],
+    "resolveVariables": true,
+    "scriptName": "qaops_process_sql_results",
+    "scriptType": "Script",
+    "sysId": "8847d9ed14724d3fbcf198987039dbf9",
+    "version": 3
+}
