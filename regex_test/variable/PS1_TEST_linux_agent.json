@@ -1,0 +1,11 @@
+{
+    "description": "Default Linux Agent",
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_variable",
+    "name": "PS1_TEST_linux_agent",
+    "opswiseGroups": [],
+    "retainSysIds": true,
+    "sysId": "b8b744f91c6e482687880311c8c50e3a",
+    "value": "tst-oms - tst-oms",
+    "version": 3
+}
