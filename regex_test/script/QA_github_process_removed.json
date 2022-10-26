@@ -1,0 +1,15 @@
+{
+    "content": "echo \"Removed = ${_resolveadv('github_removed', 'BLANK', true)}\"",
+    "description": null,
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_script",
+    "notes": [],
+    "opswiseGroups": [
+        "QA_Ops"
+    ],
+    "resolveVariables": true,
+    "scriptName": "QA_github_process_removed",
+    "scriptType": "Script",
+    "sysId": "6c88637ca4784fd9b3fe573de805117c",
+    "version": 5
+}
