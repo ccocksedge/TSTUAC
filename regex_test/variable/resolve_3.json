@@ -1,0 +1,11 @@
+{
+    "description": null,
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_variable",
+    "name": "resolve_3",
+    "opswiseGroups": [],
+    "retainSysIds": true,
+    "sysId": "8d1be03ea59f46d3bb1ff0fa8d6af5bc",
+    "value": "",
+    "version": 1
+}
