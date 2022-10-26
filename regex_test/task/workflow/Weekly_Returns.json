@@ -1,0 +1,192 @@
+{
+    "type": "taskWorkflow",
+    "actions": {
+        "abortActions": [],
+        "emailNotifications": [],
+        "setVariableActions": [],
+        "snmpNotifications": [],
+        "systemOperations": []
+    },
+    "calculateCp": false,
+    "calendar": null,
+    "cpDuration": null,
+    "cpDurationUnit": "Minutes",
+    "criticalEndpoints": [],
+    "customField1": {
+        "label": "Owner",
+        "value": null
+    },
+    "customField2": {
+        "label": null,
+        "value": null
+    },
+    "efDayConstraint": "None",
+    "efDuration": "00:00:00:00",
+    "efEnabled": false,
+    "efNthAmount": 5,
+    "efOffsetDuration": null,
+    "efOffsetDurationUnit": "Minutes",
+    "efOffsetPercentage": 0,
+    "efOffsetType": "Percentage",
+    "efTime": "00:00",
+    "efType": "Time",
+    "exclusiveTasks": [],
+    "exclusiveWithSelf": false,
+    "executionRestriction": "None",
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_task_workflow",
+    "firstRun": "",
+    "holdResources": false,
+    "lastRun": "",
+    "layoutOption": "-- None --",
+    "lfDayConstraint": "None",
+    "lfDuration": "00:00:00:00",
+    "lfEnabled": false,
+    "lfNthAmount": 5,
+    "lfOffsetDuration": null,
+    "lfOffsetDurationUnit": "Minutes",
+    "lfOffsetPercentage": 0,
+    "lfOffsetType": "Percentage",
+    "lfTime": "00:00",
+    "lfType": "Time",
+    "logLevel": "Inherited",
+    "lsDayConstraint": "None",
+    "lsDuration": "00:00:00:00",
+    "lsEnabled": false,
+    "lsNthAmount": 5,
+    "lsTime": "00:00",
+    "lsType": "Time",
+    "name": "Weekly_Returns",
+    "notes": [],
+    "numberOfTasks": 4,
+    "opswiseGroups": [
+        "Automation_Ops",
+        "Data_Ops"
+    ],
+    "overrideCalendar": false,
+    "resPriority": 10,
+    "resolveNameImmediately": true,
+    "restrictionPeriod": "None",
+    "restrictionPeriodAfterDate": null,
+    "restrictionPeriodAfterTime": null,
+    "restrictionPeriodBeforeDate": null,
+    "restrictionPeriodBeforeTime": null,
+    "restrictionPeriodDateList": [],
+    "retainSysIds": true,
+    "runCount": 0,
+    "runCriteria": [],
+    "runTime": 0,
+    "skippedOption": "Show Skipped",
+    "startHeld": false,
+    "startHeldReason": null,
+    "stepActions": [],
+    "stepConditions": [],
+    "summary": null,
+    "sysId": "09a99d85b25d4eb5991a19f741aff962",
+    "timeZonePref": "-- System Default --",
+    "twDelayAmount": null,
+    "twDelayDuration": "00:00:00:00",
+    "twDelayType": "None",
+    "twWaitAmount": null,
+    "twWaitDayConstraint": "None",
+    "twWaitDuration": "00:00:00:00",
+    "twWaitTime": "00:00",
+    "twWaitType": "None",
+    "twWorkflowOnly": "-- System Default --",
+    "userEstimatedDuration": null,
+    "variables": [
+        {
+            "allowEmptyOption": false,
+            "allowUnlistedOption": false,
+            "description": null,
+            "name": "Frequency",
+            "options": [],
+            "sysId": "e6d7ac4e31f14e0abe0e616536117131",
+            "value": "Weekly"
+        }
+    ],
+    "version": 2,
+    "virtualResources": [],
+    "workflowEdges": [
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "Weekly_Calc_Returns",
+                "value": "2"
+            },
+            "straightEdge": true,
+            "targetId": {
+                "taskName": "Report_Inputs",
+                "value": "3"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "Weekly_Calc_Returns",
+                "value": "2"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "Report_Returns",
+                "value": "5"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "Weekly_Calc_Returns",
+                "value": "2"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "Report_Vendors",
+                "value": "4"
+            }
+        }
+    ],
+    "workflowVertices": [
+        {
+            "alias": null,
+            "task": {
+                "value": "Weekly_Calc_Returns"
+            },
+            "vertexId": "2",
+            "vertexX": "60",
+            "vertexY": "30"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "Report_Inputs"
+            },
+            "vertexId": "3",
+            "vertexX": "220",
+            "vertexY": "30"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "Report_Vendors"
+            },
+            "vertexId": "4",
+            "vertexX": "220",
+            "vertexY": "230"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "Report_Returns"
+            },
+            "vertexId": "5",
+            "vertexX": "220",
+            "vertexY": "130"
+        }
+    ]
+}
