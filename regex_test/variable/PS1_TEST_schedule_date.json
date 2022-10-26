@@ -1,0 +1,11 @@
+{
+    "description": "Date = Schedule",
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_variable",
+    "name": "PS1_TEST_schedule_date",
+    "opswiseGroups": [],
+    "retainSysIds": true,
+    "sysId": "c701cb503a764bbcbbe7f8e433658233",
+    "value": "2022-10-26",
+    "version": 12
+}
