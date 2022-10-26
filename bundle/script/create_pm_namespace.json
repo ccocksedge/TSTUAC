@@ -1,0 +1,14 @@
+{
+    "content": "apiVersion: v1\nkind: Namespace\nmetadata:\n  name: product-management\n  labels:\n    name: product-management",
+    "description": null,
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_script",
+    "notes": [],
+    "opswiseGroups": [],
+    "resolveVariables": false,
+    "retainSysIds": true,
+    "scriptName": "create_pm_namespace",
+    "scriptType": "Data",
+    "sysId": "32dfca57523e4935a714f15c59c02d27",
+    "version": 2
+}
