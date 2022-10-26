@@ -1,0 +1,13 @@
+{
+    "content": "open primary=* secondary=${ops_secondary_agent_hostname} port=7999\n\nattrib secondary createop=replace\n\ncopy primary=${ops_primary_filename} secondary=${ops_secondary_filename}",
+    "description": null,
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_script",
+    "notes": [],
+    "opswiseGroups": [],
+    "resolveVariables": true,
+    "scriptName": "dataops_udm_sample",
+    "scriptType": "UDM Script",
+    "sysId": "bf06f6f01d744a4ca60642dd4f0120c3",
+    "version": 1
+}
