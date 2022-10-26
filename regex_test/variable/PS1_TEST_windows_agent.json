@@ -1,0 +1,11 @@
+{
+    "description": "Default Windows Agent",
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_variable",
+    "name": "PS1_TEST_windows_agent",
+    "opswiseGroups": [],
+    "retainSysIds": true,
+    "sysId": "3913b69ef3f1461aab622da0ebb15fae",
+    "value": "sbus77",
+    "version": 4
+}
