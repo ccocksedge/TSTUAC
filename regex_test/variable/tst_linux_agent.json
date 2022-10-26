@@ -1,0 +1,11 @@
+{
+    "description": null,
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_variable",
+    "name": "tst_linux_agent",
+    "opswiseGroups": [],
+    "retainSysIds": true,
+    "sysId": "44b0a97e028647faa1377b6cafd9f6e6",
+    "value": "tst-oms - tst-oms",
+    "version": 4
+}
