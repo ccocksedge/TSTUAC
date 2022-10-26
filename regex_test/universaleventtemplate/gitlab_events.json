@@ -1,0 +1,15 @@
+{
+    "attributes": [
+        {
+            "label": "Payload",
+            "name": "payload",
+            "type": "Text"
+        }
+    ],
+    "attributesPolicy": "Include Attributes",
+    "description": "Webhook Events from Gitlab Repository",
+    "label": "GitLab Events",
+    "name": "gitlab_events",
+    "sysId": "14625225615f416a834f16e92d039e0b",
+    "ttl": 0
+}
