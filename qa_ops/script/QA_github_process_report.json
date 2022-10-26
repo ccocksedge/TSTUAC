@@ -1,0 +1,16 @@
+{
+    "content": "echo \"Added = ${_resolveadv('github_added', 'BLANK', true)}\"\necho \"Removed = ${_resolveadv('github_removed', 'BLANK', true)}\"\necho \"Modified = ${_resolveadv('github_modified', 'BLANK', true)}\"",
+    "description": null,
+    "exportReleaseLevel": "7.4.0.0",
+    "exportTable": "ops_script",
+    "notes": [],
+    "opswiseGroups": [
+        "QA_Ops"
+    ],
+    "resolveVariables": true,
+    "retainSysIds": true,
+    "scriptName": "QA_github_process_report",
+    "scriptType": "Script",
+    "sysId": "4a1de6c218e84ad3a44bff6c647b6449",
+    "version": 3
+}
